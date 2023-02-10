@@ -37,7 +37,5 @@ class MyApplication : Application() {
             .addCallback(LoadingCallback())
             .setDefaultCallback(LoadingCallback::class.java)
             .commit()
-
-
     }
 }

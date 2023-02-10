@@ -4,6 +4,9 @@
 
 后端是使用: https://www.leancloud.cn/
 
+
+下载地址: https://www.pgyer.com/sUJR
+
 ## 功能
 * 记录任务
 * 专注模式
