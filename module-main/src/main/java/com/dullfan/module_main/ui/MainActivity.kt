@@ -46,6 +46,9 @@ import com.dullfan.module_main.utils.*
 import com.dullfan.module_main.viewmodel.HomeViewModel
 import com.dullfan.module_main.viewmodel.MainViewModel
 import com.google.gson.Gson
+import com.microsoft.appcenter.AppCenter
+import com.microsoft.appcenter.analytics.Analytics
+import com.microsoft.appcenter.crashes.Crashes
 
 
 class MainActivity : BaseActivity() {
@@ -61,6 +64,12 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(viewDataBinding.root)
+        AppCenter.start(
+            application,
+            "20f03823-10d4-4551-a04e-4f84442e25ac",
+            Analytics::class.java,
+            Crashes::class.java
+        )
         initDrawerLayout()
         getLCFileImageUrl(LCUser.getCurrentUser()["avatar"].toString(), viewModel.infoAvatarUri)
         initStartInfo()

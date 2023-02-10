@@ -38,11 +38,6 @@ class MyApplication : Application() {
             .setDefaultCallback(LoadingCallback::class.java)
             .commit()
 
-        AppCenter.start(
-            this,
-            "20f03823-10d4-4551-a04e-4f84442e25ac",
-            Analytics::class.java,
-            Crashes::class.java
-        )
+
     }
 }
