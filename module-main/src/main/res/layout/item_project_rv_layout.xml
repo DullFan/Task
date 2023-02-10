@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/tool_margin_dp"
+        android:layout_marginTop="@dimen/tool_margin_dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/item_project_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_avatar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:round="10dp" />
+
+            <TextView
+                android:id="@+id/item_project_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="NO00000125"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toRightOf="@id/item_project_avatar"
+                app:layout_constraintTop_toTopOf="@id/item_project_avatar" />
+
+
+            <TextView
+                android:id="@+id/item_project_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="医疗应用"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="@id/item_project_avatar"
+                app:layout_constraintLeft_toRightOf="@id/item_project_avatar" />
+
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/item_project_time_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/main_date_img"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/item_project_avatar"
+                app:tint="@color/text_default_color" />
+
+            <TextView
+                android:id="@+id/item_project_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="创建于2022-09-12"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/item_project_time_image"
+                app:layout_constraintLeft_toRightOf="@+id/item_project_time_image"
+                app:layout_constraintTop_toTopOf="@+id/item_project_time_image"
+                app:layout_goneMarginStart="10dp" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/item_project_arrow_img"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/project_arrow_img"
+                app:layout_constraintBottom_toBottomOf="@id/item_project_time_image"
+                app:layout_constraintRight_toLeftOf="@+id/item_project_arrow_text"
+                app:layout_constraintTop_toTopOf="@+id/item_project_time_image" />
+
+            <TextView
+                android:id="@+id/item_project_arrow_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="低"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/item_project_time_image"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/item_project_time_image"
+                app:layout_goneMarginStart="10dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

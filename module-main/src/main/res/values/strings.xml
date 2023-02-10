@@ -1,0 +1,8 @@
+<resources>
+    <string name="main_floating_button_name">添加项目</string>
+    <string name="main_drawer_layout_out_string">退出</string>
+    <string name="info_main_information_string">主要信息</string>
+    <string name="info_title_string">我的主页</string>
+    <string name="project_title_string">项目</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

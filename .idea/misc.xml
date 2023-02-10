@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/app/src/main/res/drawable/ic_launcher_background.xml" value="0.107" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/library-base/src/main/res/drawable/info_edit_frame.xml" value="0.103" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-login/src/main/res/layout/activity_login.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-login/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/drawable/item_project_member_frame.xml" value="0.103" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/drawable/line_chart_gradient.xml" value="0.102" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/dialog_add_experience_layout.xml" value="0.2" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/dialog_finish_layout.xml" value="0.2039333048311244" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/dialog_focused_layout.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/dialog_info_avatar.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/dialog_music_layout.xml" value="0.250386398763524" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/dialog_pa_layout.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/dialog_project_add.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/dialog_task_details_layout.xml" value="0.264" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/dialog_task_focused_details_layout.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_add_project.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_add_project_task.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_add_task.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_calendar.xml" value="0.176" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_focused.xml" value="0.25601282736504544" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_in_fo.xml" value="0.24947916666666667" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_project.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_project_details.xml" value="0.136" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_statistical_data.xml" value="0.170995670995671" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_task.xml" value="0.12132725430597771" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/fragment_task_focused.xml" value="0.2" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/item_calendar_focused_layout.xml" value="0.152" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/item_calendar_rv_text.xml" value="0.14558058925476602" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/item_calendar_vp.xml" value="0.2039333048311244" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/item_dialog_focused_item.xml" value="0.2" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/item_dialog_music_layout.xml" value="0.2039333048311244" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/item_drawer_layout_rv.xml" value="0.20478837109876016" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/item_task_experience_layout.xml" value="0.12997562956945571" />
+        <entry key="..\:/AStudyData/AndroidStudioProjects/Task/module-main/src/main/res/layout/item_task_layout.xml" value="0.20478837109876016" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

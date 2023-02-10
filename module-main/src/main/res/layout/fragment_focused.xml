@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.project.details.FocusedFragment">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/download"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/download"
+            android:tint="@color/white"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseAppTint" />
+
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/share"
+            android:tint="@color/white"
+            app:layout_constraintRight_toLeftOf="@id/download"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseAppTint" />
+
+
+
+        <ImageView
+            android:id="@+id/text01"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginHorizontal="20dp"
+            android:src="@drawable/shangyinhao"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/share" />
+
+
+        <TextView
+            android:id="@+id/phrase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="28dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/text01"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text01" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <ImageView
+                android:id="@+id/always_bright"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/always_bright"
+                android:tint="@color/white"
+                app:layout_constraintRight_toLeftOf="@id/share"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UseAppTint" />
+
+            <LinearLayout
+                android:id="@+id/music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="28dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/music"
+                    android:tint="@color/white"
+                    app:layout_constraintRight_toLeftOf="@id/share"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="UseAppTint" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/down_arrow"
+                    android:tint="@color/white"
+                    app:layout_constraintRight_toLeftOf="@id/share"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="UseAppTint" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/pause"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/pause"
+                android:tint="@color/white"
+                app:layout_constraintRight_toLeftOf="@id/share"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UseAppTint" />
+
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/main_add_img"
+                android:tint="@color/white"
+                android:layout_marginHorizontal="28dp"
+                app:layout_constraintRight_toLeftOf="@id/share"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UseAppTint" />
+
+            <ImageView
+                android:id="@+id/finish"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/finish"
+                android:tint="@color/white"
+                app:layout_constraintRight_toLeftOf="@id/share"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="UseAppTint" />
+
+        </LinearLayout>
+
+
+        s<com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/circular_progress_indicator"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:indicatorSize="200dp"
+            android:indeterminate="false"
+            android:max="60"
+            app:indicatorColor="@color/white"
+            app:trackCornerRadius="20dp"
+            app:trackColor="@color/white_3a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:id="@+id/date"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/circular_progress_indicator"
+            app:layout_constraintLeft_toLeftOf="@id/circular_progress_indicator"
+            app:layout_constraintRight_toRightOf="@id/circular_progress_indicator"
+            app:layout_constraintTop_toTopOf="@id/circular_progress_indicator" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停中"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:id="@+id/pause_text"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/date"
+            app:layout_constraintLeft_toLeftOf="@+id/date"
+            app:layout_constraintRight_toRightOf="@+id/date"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

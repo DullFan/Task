@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.project.details.AddTaskFragment">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/add_project_back"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="@dimen/tool_margin_dp"
+            android:layout_marginTop="@dimen/tool_margin_dp"
+            android:src="@drawable/main_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/purple_700" />
+
+        <TextView
+            android:id="@+id/add_project_view01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="返回任务列表"
+            android:textColor="@color/purple_700"
+            app:layout_constraintBottom_toBottomOf="@+id/add_project_back"
+            app:layout_constraintLeft_toRightOf="@id/add_project_back"
+            app:layout_constraintTop_toTopOf="@id/add_project_back" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_project_view01">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/tool_margin_dp">
+
+                <TextView
+                    android:id="@+id/add_project_view02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/tool_margin_dp"
+                    android:layout_marginTop="@dimen/tool_margin_dp"
+                    android:text="添加任务"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/add_project_text01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/tool_margin_dp"
+                    android:layout_marginTop="10dp"
+                    android:text="任务名称"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/add_project_view02" />
+
+                <EditText
+                    android:id="@+id/add_project_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/tool_margin_dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/info_edit_frame"
+                    android:hint="请输入任务名称"
+                    android:maxLength="20"
+                    android:padding="10dp"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/add_project_text01" />
+
+
+                <TextView
+                    android:id="@+id/add_project_text05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/tool_margin_dp"
+                    android:layout_marginTop="10dp"
+                    android:text="任务描述"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/add_project_name" />
+
+                <EditText
+                    android:id="@+id/add_project_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginHorizontal="@dimen/tool_margin_dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/info_edit_frame"
+                    android:gravity="left"
+                    android:hint="添加任务的一些描述"
+                    android:maxLength="100"
+                    android:padding="10dp"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/add_project_text05" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/add_project_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/tool_margin_dp"
+                    android:layout_marginTop="5dp"
+                    android:text="保存任务"
+                    app:layout_constraintTop_toBottomOf="@id/add_project_detail" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

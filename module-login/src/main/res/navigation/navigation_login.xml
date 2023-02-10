@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.dullfan.login.ui.fragment.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.dullfan.login.ui.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment"
+            app:enterAnim="@anim/alerter_slide_in_from_top"
+            app:exitAnim="@anim/alerter_slide_out_to_top"
+
+            app:popExitAnim="@anim/alerter_slide_out_to_top"
+            app:popEnterAnim="@anim/alerter_slide_in_from_top"/>
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/alerter_slide_in_from_top"
+            app:exitAnim="@anim/alerter_slide_out_to_top"
+
+            app:popExitAnim="@anim/alerter_slide_out_to_top"
+            app:popEnterAnim="@anim/alerter_slide_in_from_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.dullfan.login.ui.fragment.SignUpFragment"
+        android:label="SignUpFragment" />
+</navigation>

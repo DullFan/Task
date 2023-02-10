@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/background_color"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dialog_focused_text01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="15dp"
+                android:text="请选择您的操作"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dialog_focused_text02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="15dp"
+                android:text="完成计时"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dialog_focused_text01" />
+
+            <TextView
+                android:id="@+id/dialog_focused_text03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="15dp"
+                android:text="取消"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dialog_focused_text02" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="dialog_focused_text01,dialog_focused_text02,dialog_focused_text03" />
+
+            <TextView
+                android:id="@+id/dialog_focused_text04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_color"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+                android:text="填写心得"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/dialog_focused_clone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/close"
+                app:layout_constraintBottom_toBottomOf="@+id/dialog_focused_text04"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/dialog_focused_text04" />
+
+            <EditText
+                app:layout_constraintTop_toBottomOf="@id/dialog_focused_text04"
+                android:id="@+id/dialog_focused_et"
+                android:layout_width="match_parent"
+                android:hint="这段时间收获了什么?"
+                android:layout_marginHorizontal="10dp"
+                android:padding="10dp"
+                android:gravity="top|left"
+                android:background="@drawable/focused_et_back"
+                android:layout_height="130dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dialog_focused_et"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:text="提交"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group2"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="dialog_focused_text04,dialog_focused_et,button,dialog_focused_clone" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

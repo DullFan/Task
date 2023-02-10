@@ -1,0 +1,5 @@
+<resources>
+    <string name="home_item01_string">项目</string>
+    <string name="home_item02_string">日程</string>
+    <string name="home_item03_string">消息</string>
+</resources>
