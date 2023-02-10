@@ -1,0 +1,180 @@
+# compiler: R8
+# compiler_version: 3.2.74
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.0"}
+# pg_map_id: 94f6ce1
+# pg_map_hash: SHA-256 94f6ce1fd325f2f6c8d4a7d1e448ba85e6c3bcbd4dce9f374ff3fe1f81da630e
+androidx.databinding.library.baseAdapters.BR -> androidx.databinding.library.baseAdapters.BR:
+    3:3:void <init>() -> <init>
+com.dullfan.login.BR -> com.dullfan.login.BR:
+    3:3:void <init>() -> <init>
+com.dullfan.login.BuildConfig -> com.dullfan.login.BuildConfig:
+    6:6:void <init>() -> <init>
+com.dullfan.login.DataBinderMapperImpl -> com.dullfan.login.DataBinderMapperImpl:
+    32:38:void <clinit>() -> <clinit>
+    23:23:void <init>() -> <init>
+    113:114:java.util.List collectDependencies() -> collectDependencies
+    107:107:java.lang.String convertBrIdToString(int) -> convertBrIdToString
+    43:72:androidx.databinding.ViewDataBinding getDataBinder(androidx.databinding.DataBindingComponent,android.view.View,int) -> getDataBinder
+    81:88:androidx.databinding.ViewDataBinding getDataBinder(androidx.databinding.DataBindingComponent,android.view.View[],int) -> getDataBinder
+    101:102:int getLayoutId(java.lang.String) -> getLayoutId
+com.dullfan.login.DataBinderMapperImpl$InnerBrLookup -> com.dullfan.login.DataBinderMapperImpl$InnerBrLookup:
+    119:122:void <clinit>() -> <clinit>
+    118:118:void <init>() -> <init>
+com.dullfan.login.DataBinderMapperImpl$InnerLayoutIdLookup -> com.dullfan.login.DataBinderMapperImpl$InnerLayoutIdLookup:
+    127:133:void <clinit>() -> <clinit>
+    126:126:void <init>() -> <init>
+com.dullfan.login.DataBindingTriggerClass -> com.dullfan.login.DataBindingTriggerClass:
+    4:4:void <init>() -> <init>
+com.dullfan.login.bean.LoginSuccessBean -> com.dullfan.login.bean.LoginSuccessBean:
+# {"id":"sourceFile","fileName":"LoginSuccessBean.kt"}
+    3:6:void <init>(int,java.lang.String,java.lang.String) -> <init>
+    4:4:int getCode() -> getCode
+    5:5:java.lang.String getMsg() -> getMsg
+    6:6:java.lang.String getToken() -> getToken
+com.dullfan.login.common.LoginServiceImpl -> com.dullfan.login.common.LoginServiceImpl:
+# {"id":"sourceFile","fileName":"LoginServiceImpl.kt"}
+    9:9:void <init>() -> <init>
+    12:13:void startLoginActivity(android.content.Context) -> startLoginActivity
+com.dullfan.login.databinding.ActivityLoginBinding -> com.dullfan.login.databinding.ActivityLoginBinding:
+    22:23:void <init>(java.lang.Object,android.view.View,int,androidx.fragment.app.FragmentContainerView) -> <init>
+    66:66:com.dullfan.login.databinding.ActivityLoginBinding bind(android.view.View) -> bind
+    78:78:com.dullfan.login.databinding.ActivityLoginBinding bind(android.view.View,java.lang.Object) -> bind
+    29:29:com.dullfan.login.databinding.ActivityLoginBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    43:43:com.dullfan.login.databinding.ActivityLoginBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    48:48:com.dullfan.login.databinding.ActivityLoginBinding inflate(android.view.LayoutInflater) -> inflate
+    62:62:com.dullfan.login.databinding.ActivityLoginBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.login.databinding.ActivityLoginBindingImpl -> com.dullfan.login.databinding.ActivityLoginBindingImpl:
+    16:17:void <clinit>() -> <clinit>
+    28:28:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    31:84:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    75:78:void executeBindings() -> executeBindings
+    51:55:boolean hasPendingBindings() -> hasPendingBindings
+    43:46:void invalidateAll() -> invalidateAll
+com.dullfan.login.databinding.FragmentForgotPasswordBinding -> com.dullfan.login.databinding.FragmentForgotPasswordBinding:
+    52:60:void <init>(java.lang.Object,android.view.View,int,com.google.android.material.card.MaterialCardView,com.google.android.material.textfield.TextInputLayout,com.google.android.material.textfield.TextInputEditText,android.widget.TextView,androidx.constraintlayout.widget.Guideline,androidx.constraintlayout.widget.Guideline,android.widget.TextView,com.google.android.material.floatingactionbutton.FloatingActionButton) -> <init>
+    103:103:com.dullfan.login.databinding.FragmentForgotPasswordBinding bind(android.view.View) -> bind
+    115:115:com.dullfan.login.databinding.FragmentForgotPasswordBinding bind(android.view.View,java.lang.Object) -> bind
+    66:66:com.dullfan.login.databinding.FragmentForgotPasswordBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    80:80:com.dullfan.login.databinding.FragmentForgotPasswordBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    85:85:com.dullfan.login.databinding.FragmentForgotPasswordBinding inflate(android.view.LayoutInflater) -> inflate
+    99:99:com.dullfan.login.databinding.FragmentForgotPasswordBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.login.databinding.FragmentForgotPasswordBindingImpl -> com.dullfan.login.databinding.FragmentForgotPasswordBindingImpl:
+    16:24:void <clinit>() -> <clinit>
+    35:35:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    38:98:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    89:92:void executeBindings() -> executeBindings
+    65:69:boolean hasPendingBindings() -> hasPendingBindings
+    57:60:void invalidateAll() -> invalidateAll
+com.dullfan.login.databinding.FragmentLoginBinding -> com.dullfan.login.databinding.FragmentLoginBinding:
+    60:71:void <init>(java.lang.Object,android.view.View,int,com.google.android.material.card.MaterialCardView,com.google.android.material.textfield.TextInputLayout,com.google.android.material.textfield.TextInputEditText,android.widget.TextView,androidx.constraintlayout.widget.Guideline,androidx.constraintlayout.widget.Guideline,android.widget.TextView,com.google.android.material.textfield.TextInputLayout,com.google.android.material.textfield.TextInputEditText,android.widget.TextView,com.google.android.material.floatingactionbutton.FloatingActionButton) -> <init>
+    114:114:com.dullfan.login.databinding.FragmentLoginBinding bind(android.view.View) -> bind
+    126:126:com.dullfan.login.databinding.FragmentLoginBinding bind(android.view.View,java.lang.Object) -> bind
+    77:77:com.dullfan.login.databinding.FragmentLoginBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    91:91:com.dullfan.login.databinding.FragmentLoginBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    96:96:com.dullfan.login.databinding.FragmentLoginBinding inflate(android.view.LayoutInflater) -> inflate
+    110:110:com.dullfan.login.databinding.FragmentLoginBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.login.databinding.FragmentLoginBindingImpl -> com.dullfan.login.databinding.FragmentLoginBindingImpl:
+    16:27:void <clinit>() -> <clinit>
+    38:38:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    41:104:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    95:98:void executeBindings() -> executeBindings
+    71:75:boolean hasPendingBindings() -> hasPendingBindings
+    63:66:void invalidateAll() -> invalidateAll
+com.dullfan.login.databinding.FragmentSignUpBinding -> com.dullfan.login.databinding.FragmentSignUpBinding:
+    64:76:void <init>(java.lang.Object,android.view.View,int,com.google.android.material.card.MaterialCardView,com.google.android.material.textfield.TextInputLayout,com.google.android.material.textfield.TextInputEditText,android.widget.TextView,androidx.constraintlayout.widget.Guideline,androidx.constraintlayout.widget.Guideline,com.google.android.material.textfield.TextInputLayout,com.google.android.material.textfield.TextInputEditText,android.widget.TextView,com.google.android.material.floatingactionbutton.FloatingActionButton,com.google.android.material.textfield.TextInputLayout,com.google.android.material.textfield.TextInputEditText) -> <init>
+    119:119:com.dullfan.login.databinding.FragmentSignUpBinding bind(android.view.View) -> bind
+    131:131:com.dullfan.login.databinding.FragmentSignUpBinding bind(android.view.View,java.lang.Object) -> bind
+    82:82:com.dullfan.login.databinding.FragmentSignUpBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    96:96:com.dullfan.login.databinding.FragmentSignUpBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    101:101:com.dullfan.login.databinding.FragmentSignUpBinding inflate(android.view.LayoutInflater) -> inflate
+    115:115:com.dullfan.login.databinding.FragmentSignUpBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.login.databinding.FragmentSignUpBindingImpl -> com.dullfan.login.databinding.FragmentSignUpBindingImpl:
+    16:28:void <clinit>() -> <clinit>
+    39:39:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    42:106:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    97:100:void executeBindings() -> executeBindings
+    73:77:boolean hasPendingBindings() -> hasPendingBindings
+    65:68:void invalidateAll() -> invalidateAll
+com.dullfan.login.ui.activity.LoginActivity -> com.dullfan.login.ui.activity.LoginActivity:
+# {"id":"sourceFile","fileName":"LoginActivity.kt"}
+    15:21:void <init>() -> <init>
+    21:21:androidx.navigation.NavController getFindNavController() -> getFindNavController
+    17:17:com.dullfan.login.databinding.ActivityLoginBinding getViewBinding() -> getViewBinding
+    26:34:void onCreate(android.os.Bundle) -> onCreate
+    42:42:void startForgotPasswordFragment() -> startForgotPasswordFragment
+    50:52:void startMainActivity() -> startMainActivity
+    38:38:void startNavigateUp() -> startNavigateUp
+    46:46:void startSignUpFragment() -> startSignUpFragment
+com.dullfan.login.ui.activity.LoginActivity$findNavController$2 -> com.dullfan.login.ui.activity.LoginActivity$findNavController$2:
+# {"id":"sourceFile","fileName":"LoginActivity.kt"}
+    21:21:java.lang.Object invoke() -> invoke
+    22:22:androidx.navigation.NavController invoke() -> invoke
+com.dullfan.login.ui.activity.LoginActivity$viewBinding$2 -> com.dullfan.login.ui.activity.LoginActivity$viewBinding$2:
+# {"id":"sourceFile","fileName":"LoginActivity.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    18:18:com.dullfan.login.databinding.ActivityLoginBinding invoke() -> invoke
+com.dullfan.login.ui.fragment.ForgotPasswordFragment -> com.dullfan.login.ui.fragment.ForgotPasswordFragment:
+# {"id":"sourceFile","fileName":"ForgotPasswordFragment.kt"}
+    18:20:void <init>() -> <init>
+    18:18:com.dullfan.login.databinding.FragmentForgotPasswordBinding access$getViewDataBinding(com.dullfan.login.ui.fragment.ForgotPasswordFragment) -> access$getViewDataBinding
+    20:20:com.dullfan.login.databinding.FragmentForgotPasswordBinding getViewDataBinding() -> getViewDataBinding
+    29:61:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    30:30:void onCreateView$lambda-0(com.dullfan.login.ui.fragment.ForgotPasswordFragment,android.view.View) -> onCreateView$lambda-0
+com.dullfan.login.ui.fragment.ForgotPasswordFragment$onCreateView$2 -> com.dullfan.login.ui.fragment.ForgotPasswordFragment$onCreateView$2:
+# {"id":"sourceFile","fileName":"ForgotPasswordFragment.kt"}
+    33:33:java.lang.Object invoke() -> invoke
+    34:41:void invoke() -> invoke
+com.dullfan.login.ui.fragment.ForgotPasswordFragment$onCreateView$2$1 -> com.dullfan.login.ui.fragment.ForgotPasswordFragment$onCreateView$2$1:
+# {"id":"sourceFile","fileName":"ForgotPasswordFragment.kt"}
+    41:41:void <init>(com.dullfan.login.ui.fragment.ForgotPasswordFragment) -> <init>
+    52:52:void onError(java.lang.Throwable) -> onError
+    41:41:void onNext(java.lang.Object) -> onNext
+    47:48:void onNext(cn.leancloud.types.LCNull) -> onNext
+com.dullfan.login.ui.fragment.ForgotPasswordFragment$viewDataBinding$2 -> com.dullfan.login.ui.fragment.ForgotPasswordFragment$viewDataBinding$2:
+# {"id":"sourceFile","fileName":"ForgotPasswordFragment.kt"}
+    20:20:java.lang.Object invoke() -> invoke
+    21:21:com.dullfan.login.databinding.FragmentForgotPasswordBinding invoke() -> invoke
+com.dullfan.login.ui.fragment.LoginFragment -> com.dullfan.login.ui.fragment.LoginFragment:
+# {"id":"sourceFile","fileName":"LoginFragment.kt"}
+    16:18:void <init>() -> <init>
+    16:16:com.dullfan.login.databinding.FragmentLoginBinding access$getViewDataBinding(com.dullfan.login.ui.fragment.LoginFragment) -> access$getViewDataBinding
+    18:18:com.dullfan.login.databinding.FragmentLoginBinding getViewDataBinding() -> getViewDataBinding
+    28:63:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    29:29:void onCreateView$lambda-0(com.dullfan.login.ui.fragment.LoginFragment,android.view.View) -> onCreateView$lambda-0
+    33:33:void onCreateView$lambda-1(com.dullfan.login.ui.fragment.LoginFragment,android.view.View) -> onCreateView$lambda-1
+com.dullfan.login.ui.fragment.LoginFragment$onCreateView$3 -> com.dullfan.login.ui.fragment.LoginFragment$onCreateView$3:
+# {"id":"sourceFile","fileName":"LoginFragment.kt"}
+    36:36:java.lang.Object invoke() -> invoke
+    37:44:void invoke() -> invoke
+com.dullfan.login.ui.fragment.LoginFragment$onCreateView$3$1 -> com.dullfan.login.ui.fragment.LoginFragment$onCreateView$3$1:
+# {"id":"sourceFile","fileName":"LoginFragment.kt"}
+    44:44:void <init>(com.dullfan.login.ui.fragment.LoginFragment) -> <init>
+    55:55:void onError(java.lang.Throwable) -> onError
+    44:44:void onNext(java.lang.Object) -> onNext
+    50:51:void onNext(cn.leancloud.LCUser) -> onNext
+com.dullfan.login.ui.fragment.LoginFragment$viewDataBinding$2 -> com.dullfan.login.ui.fragment.LoginFragment$viewDataBinding$2:
+# {"id":"sourceFile","fileName":"LoginFragment.kt"}
+    18:18:java.lang.Object invoke() -> invoke
+    19:19:com.dullfan.login.databinding.FragmentLoginBinding invoke() -> invoke
+com.dullfan.login.ui.fragment.SignUpFragment -> com.dullfan.login.ui.fragment.SignUpFragment:
+# {"id":"sourceFile","fileName":"SignUpFragment.kt"}
+    19:21:void <init>() -> <init>
+    19:19:com.dullfan.login.databinding.FragmentSignUpBinding access$getViewDataBinding(com.dullfan.login.ui.fragment.SignUpFragment) -> access$getViewDataBinding
+    21:21:com.dullfan.login.databinding.FragmentSignUpBinding getViewDataBinding() -> getViewDataBinding
+    30:69:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    31:31:void onCreateView$lambda-0(com.dullfan.login.ui.fragment.SignUpFragment,android.view.View) -> onCreateView$lambda-0
+com.dullfan.login.ui.fragment.SignUpFragment$onCreateView$2 -> com.dullfan.login.ui.fragment.SignUpFragment$onCreateView$2:
+# {"id":"sourceFile","fileName":"SignUpFragment.kt"}
+    34:34:java.lang.Object invoke() -> invoke
+    35:49:void invoke() -> invoke
+com.dullfan.login.ui.fragment.SignUpFragment$onCreateView$2$1 -> com.dullfan.login.ui.fragment.SignUpFragment$onCreateView$2$1:
+# {"id":"sourceFile","fileName":"SignUpFragment.kt"}
+    49:49:void <init>(com.dullfan.login.ui.fragment.SignUpFragment) -> <init>
+    60:61:void onError(java.lang.Throwable) -> onError
+    49:49:void onNext(java.lang.Object) -> onNext
+    55:56:void onNext(cn.leancloud.LCUser) -> onNext
+com.dullfan.login.ui.fragment.SignUpFragment$viewDataBinding$2 -> com.dullfan.login.ui.fragment.SignUpFragment$viewDataBinding$2:
+# {"id":"sourceFile","fileName":"SignUpFragment.kt"}
+    21:21:java.lang.Object invoke() -> invoke
+    22:22:com.dullfan.login.databinding.FragmentSignUpBinding invoke() -> invoke

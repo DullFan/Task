@@ -1,0 +1,18 @@
+# compiler: R8
+# compiler_version: 3.2.74
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.0"}
+# pg_map_id: 610450a
+# pg_map_hash: SHA-256 610450ad9aafcdc158a8f8e1398944f129f56f208aeb082f8f22aee9a834f04d
+com.dullfan.library_common.BuildConfig -> com.dullfan.library_common.BuildConfig:
+    6:6:void <init>() -> <init>
+com.dullfan.library_common.autoservice.LoginService -> com.dullfan.library_common.autoservice.LoginService:
+# {"id":"sourceFile","fileName":"LoginService.kt"}
+com.dullfan.library_common.autoservice.MainService -> com.dullfan.library_common.autoservice.MainService:
+# {"id":"sourceFile","fileName":"MainService.kt"}
+com.dullfan.library_common.autoservice.PhotoService -> com.dullfan.library_common.autoservice.PhotoService:
+# {"id":"sourceFile","fileName":"PhotoService.kt"}
+com.dullfan.library_common.utils.CommonServiceLoader -> com.dullfan.library_common.utils.CommonServiceLoader:
+# {"id":"sourceFile","fileName":"CommonServiceLoader.kt"}
+    9:9:void <init>() -> <init>
+    13:16:java.lang.Object load(java.lang.Class) -> load

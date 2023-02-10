@@ -1,0 +1,1661 @@
+# compiler: R8
+# compiler_version: 3.2.74
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.0"}
+# pg_map_id: 2833a32
+# pg_map_hash: SHA-256 2833a325ba5052e6d00b334db534f0de73e983f842db1550437359218777e44b
+androidx.databinding.library.baseAdapters.BR -> androidx.databinding.library.baseAdapters.BR:
+    3:3:void <init>() -> <init>
+com.dullfan.module_main.BR -> com.dullfan.module_main.BR:
+    3:3:void <init>() -> <init>
+com.dullfan.module_main.BuildConfig -> com.dullfan.module_main.BuildConfig:
+    6:6:void <init>() -> <init>
+com.dullfan.module_main.DataBinderMapperImpl -> com.dullfan.module_main.DataBinderMapperImpl:
+    121:156:void <clinit>() -> <clinit>
+    54:54:void <init>() -> <init>
+    411:412:java.util.List collectDependencies() -> collectDependencies
+    405:405:java.lang.String convertBrIdToString(int) -> convertBrIdToString
+    161:370:androidx.databinding.ViewDataBinding getDataBinder(androidx.databinding.DataBindingComponent,android.view.View,int) -> getDataBinder
+    379:386:androidx.databinding.ViewDataBinding getDataBinder(androidx.databinding.DataBindingComponent,android.view.View[],int) -> getDataBinder
+    399:400:int getLayoutId(java.lang.String) -> getLayoutId
+com.dullfan.module_main.DataBinderMapperImpl$InnerBrLookup -> com.dullfan.module_main.DataBinderMapperImpl$InnerBrLookup:
+    417:423:void <clinit>() -> <clinit>
+    416:416:void <init>() -> <init>
+com.dullfan.module_main.DataBinderMapperImpl$InnerLayoutIdLookup -> com.dullfan.module_main.DataBinderMapperImpl$InnerLayoutIdLookup:
+    428:465:void <clinit>() -> <clinit>
+    427:427:void <init>() -> <init>
+com.dullfan.module_main.DataBindingTriggerClass -> com.dullfan.module_main.DataBindingTriggerClass:
+    4:4:void <init>() -> <init>
+com.dullfan.module_main.bean.EmergencyBean -> com.dullfan.module_main.bean.EmergencyBean:
+# {"id":"sourceFile","fileName":"EmergencyBean.kt"}
+    3:6:void <init>(int,java.util.List,java.lang.String) -> <init>
+    4:4:int getCode() -> getCode
+    5:5:java.util.List getData() -> getData
+    6:6:java.lang.String getMsg() -> getMsg
+com.dullfan.module_main.bean.EmergencyBeanData -> com.dullfan.module_main.bean.EmergencyBeanData:
+# {"id":"sourceFile","fileName":"EmergencyBean.kt"}
+    9:11:void <init>(int,java.lang.String) -> <init>
+    10:10:int getId() -> getId
+    11:11:java.lang.String getLevel_information() -> getLevel_information
+com.dullfan.module_main.bean.FocusedExperienceBean -> com.dullfan.module_main.bean.FocusedExperienceBean:
+# {"id":"sourceFile","fileName":"FocusedExperienceBean.kt"}
+    11:11:void <init>(java.lang.String,java.lang.String) -> <init>
+    11:11:java.lang.String getContent() -> getContent
+    11:11:java.lang.String getDate() -> getDate
+com.dullfan.module_main.bean.MainDrawerLayoutItemBean -> com.dullfan.module_main.bean.MainDrawerLayoutItemBean:
+# {"id":"sourceFile","fileName":"MainDrawerLayoutItemBean.kt"}
+    5:5:void <init>(java.lang.String,int) -> <init>
+    5:5:int getImg() -> getImg
+    5:5:java.lang.String getText() -> getText
+com.dullfan.module_main.bean.ProjectBean -> com.dullfan.module_main.bean.ProjectBean:
+# {"id":"sourceFile","fileName":"ProjectBean.kt"}
+    3:6:void <init>(int,java.util.List,java.lang.String) -> <init>
+    4:4:int getCode() -> getCode
+    5:5:java.util.List getData() -> getData
+    6:6:java.lang.String getMsg() -> getMsg
+com.dullfan.module_main.bean.ProjectData -> com.dullfan.module_main.bean.ProjectData:
+# {"id":"sourceFile","fileName":"ProjectBean.kt"}
+    9:19:void <init>(int,java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String) -> <init>
+    10:10:int getId() -> getId
+    11:11:java.lang.String getProject_avatar() -> getProject_avatar
+    12:12:java.lang.String getProject_created_time() -> getProject_created_time
+    13:13:int getProject_creator_id() -> getProject_creator_id
+    14:14:java.lang.String getProject_description() -> getProject_description
+    15:15:java.lang.String getProject_member_id() -> getProject_member_id
+    16:16:java.lang.String getProject_name() -> getProject_name
+    17:17:int getProject_priority_level_id() -> getProject_priority_level_id
+    18:18:int getProject_status_id() -> getProject_status_id
+    19:19:java.lang.String getProject_whether_public() -> getProject_whether_public
+com.dullfan.module_main.bean.UserInfoBean -> com.dullfan.module_main.bean.UserInfoBean:
+# {"id":"sourceFile","fileName":"UserInfoBean.kt"}
+    3:6:void <init>(int,com.dullfan.module_main.bean.UserInfoData,java.lang.String) -> <init>
+    4:4:int getCode() -> getCode
+    5:5:com.dullfan.module_main.bean.UserInfoData getData() -> getData
+    6:6:java.lang.String getMsg() -> getMsg
+com.dullfan.module_main.bean.UserInfoData -> com.dullfan.module_main.bean.UserInfoData:
+# {"id":"sourceFile","fileName":"UserInfoBean.kt"}
+    9:18:void <init>(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> <init>
+    10:10:java.lang.String getAvatar() -> getAvatar
+    11:11:java.lang.String getEmail() -> getEmail
+    12:12:int getId() -> getId
+    13:13:java.lang.String getJoin_the_project_id() -> getJoin_the_project_id
+    14:14:java.lang.String getManaged_projects_id() -> getManaged_projects_id
+    15:15:java.lang.String getPhone_number() -> getPhone_number
+    16:16:java.lang.String getProfession() -> getProfession
+    17:17:java.lang.String getRegister_time() -> getRegister_time
+    18:18:java.lang.String getUsername() -> getUsername
+com.dullfan.module_main.common.MainServiceImpl -> com.dullfan.module_main.common.MainServiceImpl:
+# {"id":"sourceFile","fileName":"MainServiceImpl.kt"}
+    9:9:void <init>() -> <init>
+    12:13:void startMainActivity(android.content.Context) -> startMainActivity
+com.dullfan.module_main.databinding.ActivityMainBinding -> com.dullfan.module_main.databinding.ActivityMainBinding:
+    62:73:void <init>(java.lang.Object,android.view.View,int,androidx.cardview.widget.CardView,androidx.drawerlayout.widget.DrawerLayout,android.widget.FrameLayout,androidx.constraintlayout.utils.widget.ImageFilterView,androidx.constraintlayout.utils.widget.ImageFilterView,androidx.constraintlayout.utils.widget.ImageFilterView,androidx.constraintlayout.utils.widget.ImageFilterView,com.google.android.material.navigation.NavigationView,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.LinearLayout,androidx.recyclerview.widget.RecyclerView) -> <init>
+    116:116:com.dullfan.module_main.databinding.ActivityMainBinding bind(android.view.View) -> bind
+    128:128:com.dullfan.module_main.databinding.ActivityMainBinding bind(android.view.View,java.lang.Object) -> bind
+    79:79:com.dullfan.module_main.databinding.ActivityMainBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    93:93:com.dullfan.module_main.databinding.ActivityMainBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    98:98:com.dullfan.module_main.databinding.ActivityMainBinding inflate(android.view.LayoutInflater) -> inflate
+    112:112:com.dullfan.module_main.databinding.ActivityMainBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ActivityMainBindingImpl -> com.dullfan.module_main.databinding.ActivityMainBindingImpl:
+    16:26:void <clinit>() -> <clinit>
+    35:35:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    38:100:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    91:94:void executeBindings() -> executeBindings
+    67:71:boolean hasPendingBindings() -> hasPendingBindings
+    59:62:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.DialogAddExperienceLayoutBinding -> com.dullfan.module_main.databinding.DialogAddExperienceLayoutBinding:
+    35:39:void <init>(java.lang.Object,android.view.View,int,com.google.android.material.button.MaterialButton,android.widget.ImageView,android.widget.EditText,android.widget.TextView) -> <init>
+    82:82:com.dullfan.module_main.databinding.DialogAddExperienceLayoutBinding bind(android.view.View) -> bind
+    95:95:com.dullfan.module_main.databinding.DialogAddExperienceLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    45:45:com.dullfan.module_main.databinding.DialogAddExperienceLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    59:59:com.dullfan.module_main.databinding.DialogAddExperienceLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    64:64:com.dullfan.module_main.databinding.DialogAddExperienceLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    78:78:com.dullfan.module_main.databinding.DialogAddExperienceLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.DialogAddExperienceLayoutBindingImpl -> com.dullfan.module_main.databinding.DialogAddExperienceLayoutBindingImpl:
+    16:20:void <clinit>() -> <clinit>
+    31:31:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    34:90:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    81:84:void executeBindings() -> executeBindings
+    57:61:boolean hasPendingBindings() -> hasPendingBindings
+    49:52:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.DialogFinishLayoutBinding -> com.dullfan.module_main.databinding.DialogFinishLayoutBinding:
+    35:39:void <init>(java.lang.Object,android.view.View,int,com.google.android.material.button.MaterialButton,android.widget.ImageView,android.widget.EditText,android.widget.TextView) -> <init>
+    82:82:com.dullfan.module_main.databinding.DialogFinishLayoutBinding bind(android.view.View) -> bind
+    94:94:com.dullfan.module_main.databinding.DialogFinishLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    45:45:com.dullfan.module_main.databinding.DialogFinishLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    59:59:com.dullfan.module_main.databinding.DialogFinishLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    64:64:com.dullfan.module_main.databinding.DialogFinishLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    78:78:com.dullfan.module_main.databinding.DialogFinishLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.DialogFinishLayoutBindingImpl -> com.dullfan.module_main.databinding.DialogFinishLayoutBindingImpl:
+    16:20:void <clinit>() -> <clinit>
+    31:31:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    34:90:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    81:84:void executeBindings() -> executeBindings
+    57:61:boolean hasPendingBindings() -> hasPendingBindings
+    49:52:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.DialogFocusedLayoutBinding -> com.dullfan.module_main.databinding.DialogFocusedLayoutBinding:
+    52:61:void <init>(java.lang.Object,android.view.View,int,com.google.android.material.button.MaterialButton,android.widget.ImageView,android.widget.EditText,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,androidx.constraintlayout.widget.Group,androidx.constraintlayout.widget.Group) -> <init>
+    104:104:com.dullfan.module_main.databinding.DialogFocusedLayoutBinding bind(android.view.View) -> bind
+    116:116:com.dullfan.module_main.databinding.DialogFocusedLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    67:67:com.dullfan.module_main.databinding.DialogFocusedLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    81:81:com.dullfan.module_main.databinding.DialogFocusedLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    86:86:com.dullfan.module_main.databinding.DialogFocusedLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    100:100:com.dullfan.module_main.databinding.DialogFocusedLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.DialogFocusedLayoutBindingImpl -> com.dullfan.module_main.databinding.DialogFocusedLayoutBindingImpl:
+    16:25:void <clinit>() -> <clinit>
+    36:36:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    39:100:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    91:94:void executeBindings() -> executeBindings
+    67:71:boolean hasPendingBindings() -> hasPendingBindings
+    59:62:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.DialogFocusedLayoutBindingLandImpl -> com.dullfan.module_main.databinding.DialogFocusedLayoutBindingLandImpl:
+    16:25:void <clinit>() -> <clinit>
+    36:36:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    39:100:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    91:94:void executeBindings() -> executeBindings
+    67:71:boolean hasPendingBindings() -> hasPendingBindings
+    59:62:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.DialogFocusedLayoutBindingSw600dpImpl -> com.dullfan.module_main.databinding.DialogFocusedLayoutBindingSw600dpImpl:
+    16:25:void <clinit>() -> <clinit>
+    36:36:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    39:100:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    91:94:void executeBindings() -> executeBindings
+    67:71:boolean hasPendingBindings() -> hasPendingBindings
+    59:62:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.DialogInfoAvatarBinding -> com.dullfan.module_main.databinding.DialogInfoAvatarBinding:
+    22:23:void <init>(java.lang.Object,android.view.View,int,androidx.recyclerview.widget.RecyclerView) -> <init>
+    66:66:com.dullfan.module_main.databinding.DialogInfoAvatarBinding bind(android.view.View) -> bind
+    78:78:com.dullfan.module_main.databinding.DialogInfoAvatarBinding bind(android.view.View,java.lang.Object) -> bind
+    29:29:com.dullfan.module_main.databinding.DialogInfoAvatarBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    43:43:com.dullfan.module_main.databinding.DialogInfoAvatarBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    48:48:com.dullfan.module_main.databinding.DialogInfoAvatarBinding inflate(android.view.LayoutInflater) -> inflate
+    62:62:com.dullfan.module_main.databinding.DialogInfoAvatarBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.DialogInfoAvatarBindingImpl -> com.dullfan.module_main.databinding.DialogInfoAvatarBindingImpl:
+    16:17:void <clinit>() -> <clinit>
+    28:28:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    31:84:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    75:78:void executeBindings() -> executeBindings
+    51:55:boolean hasPendingBindings() -> hasPendingBindings
+    43:46:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.DialogMusicLayoutBinding -> com.dullfan.module_main.databinding.DialogMusicLayoutBinding:
+    26:28:void <init>(java.lang.Object,android.view.View,int,android.widget.TextView,androidx.recyclerview.widget.RecyclerView) -> <init>
+    71:71:com.dullfan.module_main.databinding.DialogMusicLayoutBinding bind(android.view.View) -> bind
+    83:83:com.dullfan.module_main.databinding.DialogMusicLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    34:34:com.dullfan.module_main.databinding.DialogMusicLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    48:48:com.dullfan.module_main.databinding.DialogMusicLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    53:53:com.dullfan.module_main.databinding.DialogMusicLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    67:67:com.dullfan.module_main.databinding.DialogMusicLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.DialogMusicLayoutBindingImpl -> com.dullfan.module_main.databinding.DialogMusicLayoutBindingImpl:
+    16:18:void <clinit>() -> <clinit>
+    29:29:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    32:86:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    77:80:void executeBindings() -> executeBindings
+    53:57:boolean hasPendingBindings() -> hasPendingBindings
+    45:48:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.DialogProjectAddBinding -> com.dullfan.module_main.databinding.DialogProjectAddBinding:
+    31:34:void <init>(java.lang.Object,android.view.View,int,androidx.recyclerview.widget.RecyclerView,androidx.cardview.widget.CardView,android.widget.TextView) -> <init>
+    77:77:com.dullfan.module_main.databinding.DialogProjectAddBinding bind(android.view.View) -> bind
+    89:89:com.dullfan.module_main.databinding.DialogProjectAddBinding bind(android.view.View,java.lang.Object) -> bind
+    40:40:com.dullfan.module_main.databinding.DialogProjectAddBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    54:54:com.dullfan.module_main.databinding.DialogProjectAddBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    59:59:com.dullfan.module_main.databinding.DialogProjectAddBinding inflate(android.view.LayoutInflater) -> inflate
+    73:73:com.dullfan.module_main.databinding.DialogProjectAddBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.DialogProjectAddBindingImpl -> com.dullfan.module_main.databinding.DialogProjectAddBindingImpl:
+    16:19:void <clinit>() -> <clinit>
+    30:30:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    33:88:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    79:82:void executeBindings() -> executeBindings
+    55:59:boolean hasPendingBindings() -> hasPendingBindings
+    47:50:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding -> com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding:
+    86:105:void <init>(java.lang.Object,android.view.View,int,android.widget.ImageView,androidx.cardview.widget.CardView,androidx.cardview.widget.CardView,androidx.cardview.widget.CardView,androidx.cardview.widget.CardView,androidx.cardview.widget.CardView,android.widget.EditText,androidx.cardview.widget.CardView,android.widget.TextView,android.widget.TextView,android.widget.LinearLayout,android.widget.LinearLayout,android.widget.LinearLayout,android.widget.TextView,android.widget.TextView,androidx.recyclerview.widget.RecyclerView,android.widget.TextView,android.widget.TextView,android.widget.EditText) -> <init>
+    148:148:com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding bind(android.view.View) -> bind
+    161:161:com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    111:111:com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    125:125:com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    130:130:com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    144:144:com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBindingImpl -> com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBindingImpl:
+    16:35:void <clinit>() -> <clinit>
+    46:46:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    49:120:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    111:114:void executeBindings() -> executeBindings
+    87:91:boolean hasPendingBindings() -> hasPendingBindings
+    79:82:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.DialogTaskFocusedDetailsLayoutBinding -> com.dullfan.module_main.databinding.DialogTaskFocusedDetailsLayoutBinding:
+    74:89:void <init>(java.lang.Object,android.view.View,int,android.widget.ImageView,androidx.cardview.widget.CardView,androidx.cardview.widget.CardView,android.widget.EditText,androidx.cardview.widget.CardView,androidx.cardview.widget.CardView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.LinearLayout,androidx.recyclerview.widget.RecyclerView,android.widget.TextView,android.widget.EditText) -> <init>
+    132:132:com.dullfan.module_main.databinding.DialogTaskFocusedDetailsLayoutBinding bind(android.view.View) -> bind
+    145:145:com.dullfan.module_main.databinding.DialogTaskFocusedDetailsLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    95:95:com.dullfan.module_main.databinding.DialogTaskFocusedDetailsLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    109:109:com.dullfan.module_main.databinding.DialogTaskFocusedDetailsLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    114:114:com.dullfan.module_main.databinding.DialogTaskFocusedDetailsLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    128:128:com.dullfan.module_main.databinding.DialogTaskFocusedDetailsLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.DialogTaskFocusedDetailsLayoutBindingImpl -> com.dullfan.module_main.databinding.DialogTaskFocusedDetailsLayoutBindingImpl:
+    16:31:void <clinit>() -> <clinit>
+    42:42:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    45:112:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    103:106:void executeBindings() -> executeBindings
+    79:83:boolean hasPendingBindings() -> hasPendingBindings
+    71:74:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentAddProjectBinding -> com.dullfan.module_main.databinding.FragmentAddProjectBinding:
+    79:95:void <init>(java.lang.Object,android.view.View,int,androidx.constraintlayout.utils.widget.ImageFilterView,androidx.constraintlayout.utils.widget.ImageFilterView,com.google.android.material.button.MaterialButton,android.widget.EditText,androidx.constraintlayout.utils.widget.ImageFilterView,androidx.cardview.widget.CardView,androidx.constraintlayout.utils.widget.ImageFilterView,androidx.constraintlayout.widget.ConstraintLayout,android.widget.EditText,android.widget.Spinner,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView) -> <init>
+    138:138:com.dullfan.module_main.databinding.FragmentAddProjectBinding bind(android.view.View) -> bind
+    150:150:com.dullfan.module_main.databinding.FragmentAddProjectBinding bind(android.view.View,java.lang.Object) -> bind
+    101:101:com.dullfan.module_main.databinding.FragmentAddProjectBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    115:115:com.dullfan.module_main.databinding.FragmentAddProjectBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    120:120:com.dullfan.module_main.databinding.FragmentAddProjectBinding inflate(android.view.LayoutInflater) -> inflate
+    134:134:com.dullfan.module_main.databinding.FragmentAddProjectBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentAddProjectBindingImpl -> com.dullfan.module_main.databinding.FragmentAddProjectBindingImpl:
+    16:32:void <clinit>() -> <clinit>
+    43:43:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    46:114:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    105:108:void executeBindings() -> executeBindings
+    81:85:boolean hasPendingBindings() -> hasPendingBindings
+    73:76:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentAddProjectTaskBinding -> com.dullfan.module_main.databinding.FragmentAddProjectTaskBinding:
+    57:67:void <init>(java.lang.Object,android.view.View,int,androidx.constraintlayout.utils.widget.ImageFilterView,com.google.android.material.button.MaterialButton,android.widget.EditText,android.widget.EditText,android.widget.Spinner,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView) -> <init>
+    110:110:com.dullfan.module_main.databinding.FragmentAddProjectTaskBinding bind(android.view.View) -> bind
+    122:122:com.dullfan.module_main.databinding.FragmentAddProjectTaskBinding bind(android.view.View,java.lang.Object) -> bind
+    73:73:com.dullfan.module_main.databinding.FragmentAddProjectTaskBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    87:87:com.dullfan.module_main.databinding.FragmentAddProjectTaskBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    92:92:com.dullfan.module_main.databinding.FragmentAddProjectTaskBinding inflate(android.view.LayoutInflater) -> inflate
+    106:106:com.dullfan.module_main.databinding.FragmentAddProjectTaskBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentAddProjectTaskBindingImpl -> com.dullfan.module_main.databinding.FragmentAddProjectTaskBindingImpl:
+    16:26:void <clinit>() -> <clinit>
+    37:37:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    40:102:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    93:96:void executeBindings() -> executeBindings
+    69:73:boolean hasPendingBindings() -> hasPendingBindings
+    61:64:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentAddTaskBinding -> com.dullfan.module_main.databinding.FragmentAddTaskBinding:
+    48:56:void <init>(java.lang.Object,android.view.View,int,androidx.constraintlayout.utils.widget.ImageFilterView,com.google.android.material.button.MaterialButton,android.widget.EditText,android.widget.EditText,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView) -> <init>
+    99:99:com.dullfan.module_main.databinding.FragmentAddTaskBinding bind(android.view.View) -> bind
+    111:111:com.dullfan.module_main.databinding.FragmentAddTaskBinding bind(android.view.View,java.lang.Object) -> bind
+    62:62:com.dullfan.module_main.databinding.FragmentAddTaskBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    76:76:com.dullfan.module_main.databinding.FragmentAddTaskBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    81:81:com.dullfan.module_main.databinding.FragmentAddTaskBinding inflate(android.view.LayoutInflater) -> inflate
+    95:95:com.dullfan.module_main.databinding.FragmentAddTaskBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentAddTaskBindingImpl -> com.dullfan.module_main.databinding.FragmentAddTaskBindingImpl:
+    16:24:void <clinit>() -> <clinit>
+    35:35:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    38:98:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    89:92:void executeBindings() -> executeBindings
+    65:69:boolean hasPendingBindings() -> hasPendingBindings
+    57:60:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentCalendarBinding -> com.dullfan.module_main.databinding.FragmentCalendarBinding:
+    53:62:void <init>(java.lang.Object,android.view.View,int,android.widget.TextView,android.widget.TextView,androidx.recyclerview.widget.RecyclerView,com.airbnb.lottie.LottieAnimationView,androidx.constraintlayout.utils.widget.ImageFilterView,android.view.View,android.view.View,androidx.viewpager2.widget.ViewPager2,android.widget.LinearLayout) -> <init>
+    105:105:com.dullfan.module_main.databinding.FragmentCalendarBinding bind(android.view.View) -> bind
+    117:117:com.dullfan.module_main.databinding.FragmentCalendarBinding bind(android.view.View,java.lang.Object) -> bind
+    68:68:com.dullfan.module_main.databinding.FragmentCalendarBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    82:82:com.dullfan.module_main.databinding.FragmentCalendarBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    87:87:com.dullfan.module_main.databinding.FragmentCalendarBinding inflate(android.view.LayoutInflater) -> inflate
+    101:101:com.dullfan.module_main.databinding.FragmentCalendarBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentCalendarBindingImpl -> com.dullfan.module_main.databinding.FragmentCalendarBindingImpl:
+    16:25:void <clinit>() -> <clinit>
+    36:36:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    39:100:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    91:94:void executeBindings() -> executeBindings
+    67:71:boolean hasPendingBindings() -> hasPendingBindings
+    59:62:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentFocusedBinding -> com.dullfan.module_main.databinding.FragmentFocusedBinding:
+    63:76:void <init>(java.lang.Object,android.view.View,int,android.widget.ImageView,android.widget.ImageView,com.google.android.material.progressindicator.CircularProgressIndicator,android.widget.TextView,android.widget.ImageView,android.widget.ImageView,android.widget.ImageView,android.widget.LinearLayout,android.widget.ImageView,android.widget.TextView,android.widget.TextView,android.widget.ImageView,android.widget.ImageView) -> <init>
+    119:119:com.dullfan.module_main.databinding.FragmentFocusedBinding bind(android.view.View) -> bind
+    131:131:com.dullfan.module_main.databinding.FragmentFocusedBinding bind(android.view.View,java.lang.Object) -> bind
+    82:82:com.dullfan.module_main.databinding.FragmentFocusedBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    96:96:com.dullfan.module_main.databinding.FragmentFocusedBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    101:101:com.dullfan.module_main.databinding.FragmentFocusedBinding inflate(android.view.LayoutInflater) -> inflate
+    115:115:com.dullfan.module_main.databinding.FragmentFocusedBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentFocusedBindingImpl -> com.dullfan.module_main.databinding.FragmentFocusedBindingImpl:
+    16:29:void <clinit>() -> <clinit>
+    40:40:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    43:108:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    99:102:void executeBindings() -> executeBindings
+    75:79:boolean hasPendingBindings() -> hasPendingBindings
+    67:70:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentInFoBinding -> com.dullfan.module_main.databinding.FragmentInFoBinding:
+    85:100:void <init>(java.lang.Object,android.view.View,int,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.ImageView,android.widget.TextView,android.widget.EditText,android.view.View,android.widget.TextView,android.widget.TextView,android.widget.EditText,android.widget.TextView,android.widget.EditText,com.dullfan.base.view.RoundProgress,android.widget.TextView,android.widget.TextView,android.widget.EditText,android.widget.TextView) -> <init>
+    164:164:com.dullfan.module_main.databinding.FragmentInFoBinding bind(android.view.View) -> bind
+    176:176:com.dullfan.module_main.databinding.FragmentInFoBinding bind(android.view.View,java.lang.Object) -> bind
+    121:121:androidx.fragment.app.FragmentActivity getFragmentActivity() -> getFragmentActivity
+    114:114:com.dullfan.module_main.viewmodel.HomeViewModel getHomeViewModel() -> getHomeViewModel
+    107:107:com.dullfan.module_main.viewmodel.InfoViewModel getInfoViewModel() -> getInfoViewModel
+    127:127:com.dullfan.module_main.databinding.FragmentInFoBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    141:141:com.dullfan.module_main.databinding.FragmentInFoBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    146:146:com.dullfan.module_main.databinding.FragmentInFoBinding inflate(android.view.LayoutInflater) -> inflate
+    160:160:com.dullfan.module_main.databinding.FragmentInFoBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentInFoBindingImpl -> com.dullfan.module_main.databinding.FragmentInFoBindingImpl:
+    16:25:void <clinit>() -> <clinit>
+    223:223:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    36:552:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    535:548:void _internalCallbackOnClick(int,android.view.View) -> _internalCallbackOnClick
+    378:527:void executeBindings() -> executeBindings
+    267:271:boolean hasPendingBindings() -> hasPendingBindings
+    259:262:void invalidateAll() -> invalidateAll
+    357:360:boolean onChangeInfoViewModelEmailString(androidx.lifecycle.MutableLiveData,int) -> onChangeInfoViewModelEmailString
+    348:351:boolean onChangeInfoViewModelPhoneString(androidx.lifecycle.MutableLiveData,int) -> onChangeInfoViewModelPhoneString
+    366:369:boolean onChangeInfoViewModelPositionString(androidx.lifecycle.MutableLiveData,int) -> onChangeInfoViewModelPositionString
+    330:333:boolean onChangeInfoViewModelUserNameString(androidx.lifecycle.MutableLiveData,int) -> onChangeInfoViewModelUserNameString
+    339:342:boolean onChangeInfoViewModelWhetherToEditFlag(androidx.lifecycle.MutableLiveData,int) -> onChangeInfoViewModelWhetherToEditFlag
+    317:325:boolean onFieldChange(int,java.lang.Object,int) -> onFieldChange
+    294:299:void setFragmentActivity(androidx.fragment.app.FragmentActivity) -> setFragmentActivity
+    302:302:void setHomeViewModel(com.dullfan.module_main.viewmodel.HomeViewModel) -> setHomeViewModel
+    305:310:void setInfoViewModel(com.dullfan.module_main.viewmodel.InfoViewModel) -> setInfoViewModel
+    278:285:boolean setVariable(int,java.lang.Object) -> setVariable
+com.dullfan.module_main.databinding.FragmentInFoBindingImpl$1 -> com.dullfan.module_main.databinding.FragmentInFoBindingImpl$1:
+    36:36:void <init>(com.dullfan.module_main.databinding.FragmentInFoBindingImpl) -> <init>
+    41:68:void onChange() -> onChange
+com.dullfan.module_main.databinding.FragmentInFoBindingImpl$2 -> com.dullfan.module_main.databinding.FragmentInFoBindingImpl$2:
+    73:73:void <init>(com.dullfan.module_main.databinding.FragmentInFoBindingImpl) -> <init>
+    78:105:void onChange() -> onChange
+com.dullfan.module_main.databinding.FragmentInFoBindingImpl$3 -> com.dullfan.module_main.databinding.FragmentInFoBindingImpl$3:
+    110:110:void <init>(com.dullfan.module_main.databinding.FragmentInFoBindingImpl) -> <init>
+    115:142:void onChange() -> onChange
+com.dullfan.module_main.databinding.FragmentInFoBindingImpl$4 -> com.dullfan.module_main.databinding.FragmentInFoBindingImpl$4:
+    147:147:void <init>(com.dullfan.module_main.databinding.FragmentInFoBindingImpl) -> <init>
+    152:179:void onChange() -> onChange
+com.dullfan.module_main.databinding.FragmentInFoBindingImpl$5 -> com.dullfan.module_main.databinding.FragmentInFoBindingImpl$5:
+    184:184:void <init>(com.dullfan.module_main.databinding.FragmentInFoBindingImpl) -> <init>
+    189:216:void onChange() -> onChange
+com.dullfan.module_main.databinding.FragmentPhotoBinding -> com.dullfan.module_main.databinding.FragmentPhotoBinding:
+    22:23:void <init>(java.lang.Object,android.view.View,int,com.luck.picture.lib.photoview.PhotoView) -> <init>
+    66:66:com.dullfan.module_main.databinding.FragmentPhotoBinding bind(android.view.View) -> bind
+    78:78:com.dullfan.module_main.databinding.FragmentPhotoBinding bind(android.view.View,java.lang.Object) -> bind
+    29:29:com.dullfan.module_main.databinding.FragmentPhotoBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    43:43:com.dullfan.module_main.databinding.FragmentPhotoBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    48:48:com.dullfan.module_main.databinding.FragmentPhotoBinding inflate(android.view.LayoutInflater) -> inflate
+    62:62:com.dullfan.module_main.databinding.FragmentPhotoBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentPhotoBindingImpl -> com.dullfan.module_main.databinding.FragmentPhotoBindingImpl:
+    16:17:void <clinit>() -> <clinit>
+    28:28:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    31:84:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    75:78:void executeBindings() -> executeBindings
+    51:55:boolean hasPendingBindings() -> hasPendingBindings
+    43:46:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentProjectBinding -> com.dullfan.module_main.databinding.FragmentProjectBinding:
+    39:44:void <init>(java.lang.Object,android.view.View,int,com.google.android.material.floatingactionbutton.FloatingActionButton,com.airbnb.lottie.LottieAnimationView,androidx.recyclerview.widget.RecyclerView,com.scwang.smart.refresh.layout.SmartRefreshLayout,android.widget.TextView) -> <init>
+    87:87:com.dullfan.module_main.databinding.FragmentProjectBinding bind(android.view.View) -> bind
+    99:99:com.dullfan.module_main.databinding.FragmentProjectBinding bind(android.view.View,java.lang.Object) -> bind
+    50:50:com.dullfan.module_main.databinding.FragmentProjectBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    64:64:com.dullfan.module_main.databinding.FragmentProjectBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    69:69:com.dullfan.module_main.databinding.FragmentProjectBinding inflate(android.view.LayoutInflater) -> inflate
+    83:83:com.dullfan.module_main.databinding.FragmentProjectBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentProjectBindingImpl -> com.dullfan.module_main.databinding.FragmentProjectBindingImpl:
+    16:20:void <clinit>() -> <clinit>
+    29:29:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    32:88:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    79:82:void executeBindings() -> executeBindings
+    55:59:boolean hasPendingBindings() -> hasPendingBindings
+    47:50:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentProjectDetailsBinding -> com.dullfan.module_main.databinding.FragmentProjectDetailsBinding:
+    143:176:void <init>(java.lang.Object,android.view.View,int,androidx.constraintlayout.widget.ConstraintLayout,android.widget.ImageView,androidx.cardview.widget.CardView,android.widget.TextView,android.view.View,androidx.constraintlayout.widget.Guideline,androidx.constraintlayout.widget.Guideline,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,androidx.constraintlayout.utils.widget.ImageFilterView,androidx.drawerlayout.widget.DrawerLayout,android.widget.FrameLayout,androidx.constraintlayout.widget.ConstraintLayout,androidx.constraintlayout.widget.ConstraintLayout,com.google.android.material.navigation.NavigationView,androidx.recyclerview.widget.RecyclerView,android.widget.TextView,android.widget.TextView,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.TextView,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.EditText,androidx.constraintlayout.widget.Guideline,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.EditText) -> <init>
+    219:219:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding bind(android.view.View) -> bind
+    231:231:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding bind(android.view.View,java.lang.Object) -> bind
+    182:182:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    196:196:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    201:201:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding inflate(android.view.LayoutInflater) -> inflate
+    215:215:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentProjectDetailsBindingImpl -> com.dullfan.module_main.databinding.FragmentProjectDetailsBindingImpl:
+    16:48:void <clinit>() -> <clinit>
+    57:57:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    60:144:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    135:138:void executeBindings() -> executeBindings
+    111:115:boolean hasPendingBindings() -> hasPendingBindings
+    103:106:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentStatisticalDataBinding -> com.dullfan.module_main.databinding.FragmentStatisticalDataBinding:
+    119:146:void <init>(java.lang.Object,android.view.View,int,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,com.github.mikephil.charting.charts.PieChart,android.widget.TextView,android.widget.TextView,android.widget.TextView,com.github.mikephil.charting.charts.LineChart,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.TextView,com.github.mikephil.charting.charts.LineChart) -> <init>
+    189:189:com.dullfan.module_main.databinding.FragmentStatisticalDataBinding bind(android.view.View) -> bind
+    202:202:com.dullfan.module_main.databinding.FragmentStatisticalDataBinding bind(android.view.View,java.lang.Object) -> bind
+    152:152:com.dullfan.module_main.databinding.FragmentStatisticalDataBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    166:166:com.dullfan.module_main.databinding.FragmentStatisticalDataBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    171:171:com.dullfan.module_main.databinding.FragmentStatisticalDataBinding inflate(android.view.LayoutInflater) -> inflate
+    185:185:com.dullfan.module_main.databinding.FragmentStatisticalDataBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentStatisticalDataBindingImpl -> com.dullfan.module_main.databinding.FragmentStatisticalDataBindingImpl:
+    16:43:void <clinit>() -> <clinit>
+    54:54:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    57:136:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    127:130:void executeBindings() -> executeBindings
+    103:107:boolean hasPendingBindings() -> hasPendingBindings
+    95:98:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentTaskBinding -> com.dullfan.module_main.databinding.FragmentTaskBinding:
+    35:39:void <init>(java.lang.Object,android.view.View,int,android.widget.TextView,com.airbnb.lottie.LottieAnimationView,com.google.android.material.floatingactionbutton.FloatingActionButton,androidx.recyclerview.widget.RecyclerView) -> <init>
+    82:82:com.dullfan.module_main.databinding.FragmentTaskBinding bind(android.view.View) -> bind
+    94:94:com.dullfan.module_main.databinding.FragmentTaskBinding bind(android.view.View,java.lang.Object) -> bind
+    45:45:com.dullfan.module_main.databinding.FragmentTaskBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    59:59:com.dullfan.module_main.databinding.FragmentTaskBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    64:64:com.dullfan.module_main.databinding.FragmentTaskBinding inflate(android.view.LayoutInflater) -> inflate
+    78:78:com.dullfan.module_main.databinding.FragmentTaskBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentTaskBindingImpl -> com.dullfan.module_main.databinding.FragmentTaskBindingImpl:
+    16:20:void <clinit>() -> <clinit>
+    31:31:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    34:90:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    81:84:void executeBindings() -> executeBindings
+    57:61:boolean hasPendingBindings() -> hasPendingBindings
+    49:52:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.FragmentTaskFocusedBinding -> com.dullfan.module_main.databinding.FragmentTaskFocusedBinding:
+    44:50:void <init>(java.lang.Object,android.view.View,int,com.airbnb.lottie.LottieAnimationView,androidx.recyclerview.widget.RecyclerView,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.LinearLayout,android.widget.AutoCompleteTextView,android.widget.TextView) -> <init>
+    93:93:com.dullfan.module_main.databinding.FragmentTaskFocusedBinding bind(android.view.View) -> bind
+    105:105:com.dullfan.module_main.databinding.FragmentTaskFocusedBinding bind(android.view.View,java.lang.Object) -> bind
+    56:56:com.dullfan.module_main.databinding.FragmentTaskFocusedBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    70:70:com.dullfan.module_main.databinding.FragmentTaskFocusedBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    75:75:com.dullfan.module_main.databinding.FragmentTaskFocusedBinding inflate(android.view.LayoutInflater) -> inflate
+    89:89:com.dullfan.module_main.databinding.FragmentTaskFocusedBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.FragmentTaskFocusedBindingImpl -> com.dullfan.module_main.databinding.FragmentTaskFocusedBindingImpl:
+    16:22:void <clinit>() -> <clinit>
+    33:33:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    36:94:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    85:88:void executeBindings() -> executeBindings
+    61:65:boolean hasPendingBindings() -> hasPendingBindings
+    53:56:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemCalendarFocusedLayoutBinding -> com.dullfan.module_main.databinding.ItemCalendarFocusedLayoutBinding:
+    49:57:void <init>(java.lang.Object,android.view.View,int,com.google.android.material.card.MaterialCardView,com.google.android.material.card.MaterialCardView,android.widget.TextView,android.widget.TextView,android.widget.TextView,android.widget.LinearLayout,android.widget.TextView,android.widget.TextView) -> <init>
+    100:100:com.dullfan.module_main.databinding.ItemCalendarFocusedLayoutBinding bind(android.view.View) -> bind
+    113:113:com.dullfan.module_main.databinding.ItemCalendarFocusedLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    63:63:com.dullfan.module_main.databinding.ItemCalendarFocusedLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    77:77:com.dullfan.module_main.databinding.ItemCalendarFocusedLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    82:82:com.dullfan.module_main.databinding.ItemCalendarFocusedLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    96:96:com.dullfan.module_main.databinding.ItemCalendarFocusedLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemCalendarFocusedLayoutBindingImpl -> com.dullfan.module_main.databinding.ItemCalendarFocusedLayoutBindingImpl:
+    16:24:void <clinit>() -> <clinit>
+    35:35:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    38:98:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    89:92:void executeBindings() -> executeBindings
+    65:69:boolean hasPendingBindings() -> hasPendingBindings
+    57:60:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemCalendarRvTextBinding -> com.dullfan.module_main.databinding.ItemCalendarRvTextBinding:
+    26:28:void <init>(java.lang.Object,android.view.View,int,com.google.android.material.card.MaterialCardView,android.widget.TextView) -> <init>
+    71:71:com.dullfan.module_main.databinding.ItemCalendarRvTextBinding bind(android.view.View) -> bind
+    83:83:com.dullfan.module_main.databinding.ItemCalendarRvTextBinding bind(android.view.View,java.lang.Object) -> bind
+    34:34:com.dullfan.module_main.databinding.ItemCalendarRvTextBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    48:48:com.dullfan.module_main.databinding.ItemCalendarRvTextBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    53:53:com.dullfan.module_main.databinding.ItemCalendarRvTextBinding inflate(android.view.LayoutInflater) -> inflate
+    67:67:com.dullfan.module_main.databinding.ItemCalendarRvTextBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemCalendarRvTextBindingImpl -> com.dullfan.module_main.databinding.ItemCalendarRvTextBindingImpl:
+    16:18:void <clinit>() -> <clinit>
+    29:29:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    32:86:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    77:80:void executeBindings() -> executeBindings
+    53:57:boolean hasPendingBindings() -> hasPendingBindings
+    45:48:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemCalendarVpBinding -> com.dullfan.module_main.databinding.ItemCalendarVpBinding:
+    22:23:void <init>(java.lang.Object,android.view.View,int,androidx.recyclerview.widget.RecyclerView) -> <init>
+    66:66:com.dullfan.module_main.databinding.ItemCalendarVpBinding bind(android.view.View) -> bind
+    78:78:com.dullfan.module_main.databinding.ItemCalendarVpBinding bind(android.view.View,java.lang.Object) -> bind
+    29:29:com.dullfan.module_main.databinding.ItemCalendarVpBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    43:43:com.dullfan.module_main.databinding.ItemCalendarVpBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    48:48:com.dullfan.module_main.databinding.ItemCalendarVpBinding inflate(android.view.LayoutInflater) -> inflate
+    62:62:com.dullfan.module_main.databinding.ItemCalendarVpBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemCalendarVpBindingImpl -> com.dullfan.module_main.databinding.ItemCalendarVpBindingImpl:
+    25:25:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    28:80:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    71:74:void executeBindings() -> executeBindings
+    47:51:boolean hasPendingBindings() -> hasPendingBindings
+    39:42:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemDialogFocusedItemBinding -> com.dullfan.module_main.databinding.ItemDialogFocusedItemBinding:
+    33:37:void <init>(java.lang.Object,android.view.View,int,com.google.android.material.card.MaterialCardView,android.widget.TextView,android.widget.TextView,android.widget.TextView) -> <init>
+    80:80:com.dullfan.module_main.databinding.ItemDialogFocusedItemBinding bind(android.view.View) -> bind
+    92:92:com.dullfan.module_main.databinding.ItemDialogFocusedItemBinding bind(android.view.View,java.lang.Object) -> bind
+    43:43:com.dullfan.module_main.databinding.ItemDialogFocusedItemBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    57:57:com.dullfan.module_main.databinding.ItemDialogFocusedItemBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    62:62:com.dullfan.module_main.databinding.ItemDialogFocusedItemBinding inflate(android.view.LayoutInflater) -> inflate
+    76:76:com.dullfan.module_main.databinding.ItemDialogFocusedItemBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemDialogFocusedItemBindingImpl -> com.dullfan.module_main.databinding.ItemDialogFocusedItemBindingImpl:
+    16:19:void <clinit>() -> <clinit>
+    28:28:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    31:86:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    77:80:void executeBindings() -> executeBindings
+    53:57:boolean hasPendingBindings() -> hasPendingBindings
+    45:48:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemDialogInfoLayoutRvBinding -> com.dullfan.module_main.databinding.ItemDialogInfoLayoutRvBinding:
+    25:27:void <init>(java.lang.Object,android.view.View,int,android.widget.TextView,android.view.View) -> <init>
+    70:70:com.dullfan.module_main.databinding.ItemDialogInfoLayoutRvBinding bind(android.view.View) -> bind
+    82:82:com.dullfan.module_main.databinding.ItemDialogInfoLayoutRvBinding bind(android.view.View,java.lang.Object) -> bind
+    33:33:com.dullfan.module_main.databinding.ItemDialogInfoLayoutRvBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    47:47:com.dullfan.module_main.databinding.ItemDialogInfoLayoutRvBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    52:52:com.dullfan.module_main.databinding.ItemDialogInfoLayoutRvBinding inflate(android.view.LayoutInflater) -> inflate
+    66:66:com.dullfan.module_main.databinding.ItemDialogInfoLayoutRvBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemDialogInfoLayoutRvBindingImpl -> com.dullfan.module_main.databinding.ItemDialogInfoLayoutRvBindingImpl:
+    16:18:void <clinit>() -> <clinit>
+    29:29:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    32:86:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    77:80:void executeBindings() -> executeBindings
+    53:57:boolean hasPendingBindings() -> hasPendingBindings
+    45:48:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemDialogLayoutRvBinding -> com.dullfan.module_main.databinding.ItemDialogLayoutRvBinding:
+    26:28:void <init>(java.lang.Object,android.view.View,int,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.TextView) -> <init>
+    71:71:com.dullfan.module_main.databinding.ItemDialogLayoutRvBinding bind(android.view.View) -> bind
+    83:83:com.dullfan.module_main.databinding.ItemDialogLayoutRvBinding bind(android.view.View,java.lang.Object) -> bind
+    34:34:com.dullfan.module_main.databinding.ItemDialogLayoutRvBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    48:48:com.dullfan.module_main.databinding.ItemDialogLayoutRvBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    53:53:com.dullfan.module_main.databinding.ItemDialogLayoutRvBinding inflate(android.view.LayoutInflater) -> inflate
+    67:67:com.dullfan.module_main.databinding.ItemDialogLayoutRvBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemDialogLayoutRvBindingImpl -> com.dullfan.module_main.databinding.ItemDialogLayoutRvBindingImpl:
+    16:18:void <clinit>() -> <clinit>
+    29:29:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    32:86:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    77:80:void executeBindings() -> executeBindings
+    53:57:boolean hasPendingBindings() -> hasPendingBindings
+    45:48:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemDialogMusicLayoutBinding -> com.dullfan.module_main.databinding.ItemDialogMusicLayoutBinding:
+    26:28:void <init>(java.lang.Object,android.view.View,int,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.TextView) -> <init>
+    71:71:com.dullfan.module_main.databinding.ItemDialogMusicLayoutBinding bind(android.view.View) -> bind
+    83:83:com.dullfan.module_main.databinding.ItemDialogMusicLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    34:34:com.dullfan.module_main.databinding.ItemDialogMusicLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    48:48:com.dullfan.module_main.databinding.ItemDialogMusicLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    53:53:com.dullfan.module_main.databinding.ItemDialogMusicLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    67:67:com.dullfan.module_main.databinding.ItemDialogMusicLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemDialogMusicLayoutBindingImpl -> com.dullfan.module_main.databinding.ItemDialogMusicLayoutBindingImpl:
+    16:18:void <clinit>() -> <clinit>
+    29:29:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    32:86:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    77:80:void executeBindings() -> executeBindings
+    53:57:boolean hasPendingBindings() -> hasPendingBindings
+    45:48:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemDrawerLayoutRvBinding -> com.dullfan.module_main.databinding.ItemDrawerLayoutRvBinding:
+    34:38:void <init>(java.lang.Object,android.view.View,int,androidx.cardview.widget.CardView,android.widget.ImageView,androidx.cardview.widget.CardView,android.widget.TextView) -> <init>
+    81:81:com.dullfan.module_main.databinding.ItemDrawerLayoutRvBinding bind(android.view.View) -> bind
+    93:93:com.dullfan.module_main.databinding.ItemDrawerLayoutRvBinding bind(android.view.View,java.lang.Object) -> bind
+    44:44:com.dullfan.module_main.databinding.ItemDrawerLayoutRvBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    58:58:com.dullfan.module_main.databinding.ItemDrawerLayoutRvBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    63:63:com.dullfan.module_main.databinding.ItemDrawerLayoutRvBinding inflate(android.view.LayoutInflater) -> inflate
+    77:77:com.dullfan.module_main.databinding.ItemDrawerLayoutRvBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemDrawerLayoutRvBindingImpl -> com.dullfan.module_main.databinding.ItemDrawerLayoutRvBindingImpl:
+    16:20:void <clinit>() -> <clinit>
+    31:31:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    34:90:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    81:84:void executeBindings() -> executeBindings
+    57:61:boolean hasPendingBindings() -> hasPendingBindings
+    49:52:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBinding -> com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBinding:
+    27:29:void <init>(java.lang.Object,android.view.View,int,androidx.cardview.widget.CardView,android.widget.TextView) -> <init>
+    72:72:com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBinding bind(android.view.View) -> bind
+    85:85:com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBinding bind(android.view.View,java.lang.Object) -> bind
+    35:35:com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    49:49:com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    54:54:com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBinding inflate(android.view.LayoutInflater) -> inflate
+    68:68:com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBindingImpl -> com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBindingImpl:
+    16:18:void <clinit>() -> <clinit>
+    29:29:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    32:86:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    77:80:void executeBindings() -> executeBindings
+    53:57:boolean hasPendingBindings() -> hasPendingBindings
+    45:48:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemProjectRvLayoutBinding -> com.dullfan.module_main.databinding.ItemProjectRvLayoutBinding:
+    43:50:void <init>(java.lang.Object,android.view.View,int,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.TextView,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.TextView,android.widget.TextView,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.TextView) -> <init>
+    93:93:com.dullfan.module_main.databinding.ItemProjectRvLayoutBinding bind(android.view.View) -> bind
+    105:105:com.dullfan.module_main.databinding.ItemProjectRvLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    56:56:com.dullfan.module_main.databinding.ItemProjectRvLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    70:70:com.dullfan.module_main.databinding.ItemProjectRvLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    75:75:com.dullfan.module_main.databinding.ItemProjectRvLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    89:89:com.dullfan.module_main.databinding.ItemProjectRvLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemProjectRvLayoutBindingImpl -> com.dullfan.module_main.databinding.ItemProjectRvLayoutBindingImpl:
+    16:23:void <clinit>() -> <clinit>
+    34:34:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    37:96:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    87:90:void executeBindings() -> executeBindings
+    63:67:boolean hasPendingBindings() -> hasPendingBindings
+    55:58:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemTaskExperienceLayoutBinding -> com.dullfan.module_main.databinding.ItemTaskExperienceLayoutBinding:
+    25:27:void <init>(java.lang.Object,android.view.View,int,android.widget.TextView,android.widget.TextView) -> <init>
+    70:70:com.dullfan.module_main.databinding.ItemTaskExperienceLayoutBinding bind(android.view.View) -> bind
+    83:83:com.dullfan.module_main.databinding.ItemTaskExperienceLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    33:33:com.dullfan.module_main.databinding.ItemTaskExperienceLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    47:47:com.dullfan.module_main.databinding.ItemTaskExperienceLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    52:52:com.dullfan.module_main.databinding.ItemTaskExperienceLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    66:66:com.dullfan.module_main.databinding.ItemTaskExperienceLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemTaskExperienceLayoutBindingImpl -> com.dullfan.module_main.databinding.ItemTaskExperienceLayoutBindingImpl:
+    16:18:void <clinit>() -> <clinit>
+    29:29:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    32:86:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    77:80:void executeBindings() -> executeBindings
+    53:57:boolean hasPendingBindings() -> hasPendingBindings
+    45:48:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.databinding.ItemTaskLayoutBinding -> com.dullfan.module_main.databinding.ItemTaskLayoutBinding:
+    33:37:void <init>(java.lang.Object,android.view.View,int,android.widget.TextView,android.widget.TextView,androidx.constraintlayout.utils.widget.ImageFilterView,android.widget.TextView) -> <init>
+    80:80:com.dullfan.module_main.databinding.ItemTaskLayoutBinding bind(android.view.View) -> bind
+    92:92:com.dullfan.module_main.databinding.ItemTaskLayoutBinding bind(android.view.View,java.lang.Object) -> bind
+    43:43:com.dullfan.module_main.databinding.ItemTaskLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    57:57:com.dullfan.module_main.databinding.ItemTaskLayoutBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    62:62:com.dullfan.module_main.databinding.ItemTaskLayoutBinding inflate(android.view.LayoutInflater) -> inflate
+    76:76:com.dullfan.module_main.databinding.ItemTaskLayoutBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_main.databinding.ItemTaskLayoutBindingImpl -> com.dullfan.module_main.databinding.ItemTaskLayoutBindingImpl:
+    16:20:void <clinit>() -> <clinit>
+    31:31:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    34:90:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    81:84:void executeBindings() -> executeBindings
+    57:61:boolean hasPendingBindings() -> hasPendingBindings
+    49:52:void invalidateAll() -> invalidateAll
+com.dullfan.module_main.generated.callback.OnClickListener -> com.dullfan.module_main.generated.callback.OnClickListener:
+    5:7:void <init>(com.dullfan.module_main.generated.callback.OnClickListener$Listener,int) -> <init>
+    11:11:void onClick(android.view.View) -> onClick
+com.dullfan.module_main.ui.MainActivity -> com.dullfan.module_main.ui.MainActivity:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    51:380:void <init>() -> <init>
+    51:51:void access$rvSelectColor(com.dullfan.module_main.ui.MainActivity,com.dullfan.module_main.databinding.ItemDrawerLayoutRvBinding,int,int,boolean) -> access$rvSelectColor
+    332:336:void exit() -> exit
+    59:59:com.dullfan.base.adapter.BaseRvAdapter getBaseRvAdapter() -> getBaseRvAdapter
+    329:329:long getExitTime() -> getExitTime
+    53:53:com.dullfan.module_main.databinding.ActivityMainBinding getViewDataBinding() -> getViewDataBinding
+    57:57:com.dullfan.module_main.viewmodel.HomeViewModel getViewModel() -> getViewModel
+    366:369:void immersiveSetting() -> immersiveSetting
+    97:101:void infoNavigateUp() -> infoNavigateUp
+    156:165:void initDrawerLayout() -> initDrawerLayout
+    175:233:void initDrawerLayoutRv() -> initDrawerLayoutRv
+    77:77:void initStartInfo() -> initStartInfo
+    264:325:void onBackPressed() -> onBackPressed
+    274:274:void onBackPressed$lambda-1(android.app.AlertDialog,android.view.View) -> onBackPressed$lambda-1
+    277:277:void onBackPressed$lambda-2(android.app.AlertDialog,android.view.View) -> onBackPressed$lambda-2
+    280:281:void onBackPressed$lambda-3(com.dullfan.module_main.databinding.DialogFocusedLayoutBinding,android.view.View) -> onBackPressed$lambda-3
+    62:68:void onCreate(android.os.Bundle) -> onCreate
+    69:69:void onCreate$lambda-0(com.dullfan.module_main.ui.MainActivity,java.lang.String) -> onCreate$lambda-0
+    147:149:void outLogin() -> outLogin
+    245:258:void rvSelectColor(com.dullfan.module_main.databinding.ItemDrawerLayoutRvBinding,int,int,boolean) -> rvSelectColor
+    59:59:void setBaseRvAdapter(com.dullfan.base.adapter.BaseRvAdapter) -> setBaseRvAdapter
+    329:329:void setExitTime(long) -> setExitTime
+    132:132:void startAddProjectFragment() -> startAddProjectFragment
+    139:139:void startAddProjectTaskFragment() -> startAddProjectTaskFragment
+    125:125:void startCalendarFragment() -> startCalendarFragment
+    112:112:void startDetailsFragment() -> startDetailsFragment
+    119:119:void startStatisticalDataFragment() -> startStatisticalDataFragment
+    341:361:void titleLayout(boolean) -> titleLayout
+    90:90:void updateAvatar(java.lang.String) -> updateAvatar
+com.dullfan.module_main.ui.MainActivity$initDrawerLayout$1 -> com.dullfan.module_main.ui.MainActivity$initDrawerLayout$1:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    159:159:java.lang.Object invoke() -> invoke
+    160:160:void invoke() -> invoke
+com.dullfan.module_main.ui.MainActivity$initDrawerLayout$1$1 -> com.dullfan.module_main.ui.MainActivity$initDrawerLayout$1$1:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    160:160:java.lang.Object invoke() -> invoke
+    161:161:void invoke() -> invoke
+com.dullfan.module_main.ui.MainActivity$initDrawerLayout$2 -> com.dullfan.module_main.ui.MainActivity$initDrawerLayout$2:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    165:165:java.lang.Object invoke() -> invoke
+    166:166:void invoke() -> invoke
+com.dullfan.module_main.ui.MainActivity$initDrawerLayoutRv$1 -> com.dullfan.module_main.ui.MainActivity$initDrawerLayoutRv$1:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    189:189:void <init>(java.util.List,com.dullfan.module_main.ui.MainActivity,int) -> <init>
+    189:189:void onBind(androidx.databinding.ViewDataBinding,java.lang.Object,int) -> onBind
+    195:216:void onBind(androidx.databinding.ViewDataBinding,com.dullfan.module_main.bean.MainDrawerLayoutItemBean,int) -> onBind
+    217:227:void onBind$lambda-0(com.dullfan.module_main.ui.MainActivity$initDrawerLayoutRv$1,int,com.dullfan.module_main.ui.MainActivity,android.view.View) -> onBind$lambda-0
+com.dullfan.module_main.ui.MainActivity$initStartInfo$1 -> com.dullfan.module_main.ui.MainActivity$initStartInfo$1:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    77:77:java.lang.Object invoke() -> invoke
+    78:81:void invoke() -> invoke
+com.dullfan.module_main.ui.MainActivity$onBackPressed$4 -> com.dullfan.module_main.ui.MainActivity$onBackPressed$4:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    283:283:java.lang.Object invoke() -> invoke
+    284:301:void invoke() -> invoke
+com.dullfan.module_main.ui.MainActivity$onBackPressed$4$1 -> com.dullfan.module_main.ui.MainActivity$onBackPressed$4$1:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    301:301:java.lang.Object invoke(java.lang.Object) -> invoke
+    302:302:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.MainActivity$onBackPressed$4$2 -> com.dullfan.module_main.ui.MainActivity$onBackPressed$4$2:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    301:301:java.lang.Object invoke(java.lang.Object) -> invoke
+    304:306:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.MainActivity$special$$inlined$viewModels$default$1 -> com.dullfan.module_main.ui.MainActivity$special$$inlined$viewModels$default$1:
+# {"id":"sourceFile","fileName":"ActivityViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    18:18:androidx.lifecycle.ViewModelProvider$Factory invoke() -> invoke
+com.dullfan.module_main.ui.MainActivity$special$$inlined$viewModels$default$2 -> com.dullfan.module_main.ui.MainActivity$special$$inlined$viewModels$default$2:
+# {"id":"sourceFile","fileName":"ActivityViewModelLazy.kt"}
+    20:20:androidx.lifecycle.ViewModelStore invoke() -> invoke
+    20:20:java.lang.Object invoke() -> invoke
+com.dullfan.module_main.ui.MainActivity$viewDataBinding$2 -> com.dullfan.module_main.ui.MainActivity$viewDataBinding$2:
+# {"id":"sourceFile","fileName":"MainActivity.kt"}
+    53:53:java.lang.Object invoke() -> invoke
+    54:54:com.dullfan.module_main.databinding.ActivityMainBinding invoke() -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment -> com.dullfan.module_main.ui.calendar.CalendarFragment:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    31:45:void <init>() -> <init>
+    31:31:void access$initCalendarVp2(com.dullfan.module_main.ui.calendar.CalendarFragment) -> access$initCalendarVp2
+    31:31:void access$updatePagerHeightForChild(com.dullfan.module_main.ui.calendar.CalendarFragment,android.view.View,androidx.viewpager2.widget.ViewPager2) -> access$updatePagerHeightForChild
+    45:45:java.util.List getAllDataList() -> getAllDataList
+    32:32:com.dullfan.module_main.databinding.FragmentCalendarBinding getBinding() -> getBinding
+    36:36:int getLeftSwipeNumber() -> getLeftSwipeNumber
+    37:37:int getRightSwipeNumber() -> getRightSwipeNumber
+    44:44:boolean getSortFlag() -> getSortFlag
+    35:35:com.dullfan.base.adapter.BaseRvAdapter getVp2Adapter() -> getVp2Adapter
+    68:435:void initCalendarVp2() -> initCalendarVp2
+    57:58:void initData() -> initData
+    52:53:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    45:45:void setAllDataList(java.util.List) -> setAllDataList
+    36:36:void setLeftSwipeNumber(int) -> setLeftSwipeNumber
+    37:37:void setRightSwipeNumber(int) -> setRightSwipeNumber
+    44:44:void setSortFlag(boolean) -> setSortFlag
+    35:35:void setVp2Adapter(com.dullfan.base.adapter.BaseRvAdapter) -> setVp2Adapter
+    444:444:void updatePagerHeightForChild(android.view.View,androidx.viewpager2.widget.ViewPager2) -> updatePagerHeightForChild
+    446:453:void updatePagerHeightForChild$lambda-1(android.view.View,androidx.viewpager2.widget.ViewPager2) -> updatePagerHeightForChild$lambda-1
+com.dullfan.module_main.ui.calendar.CalendarFragment$binding$2 -> com.dullfan.module_main.ui.calendar.CalendarFragment$binding$2:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    32:32:java.lang.Object invoke() -> invoke
+    33:33:com.dullfan.module_main.databinding.FragmentCalendarBinding invoke() -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    83:83:void <init>(java.util.List,com.dullfan.module_main.ui.calendar.CalendarFragment,java.text.SimpleDateFormat,int) -> <init>
+    83:83:void onBind(androidx.databinding.ViewDataBinding,java.lang.Object,int) -> onBind
+    85:461:void onBind(androidx.databinding.ViewDataBinding,java.util.Calendar,int) -> onBind
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    99:99:void <init>(java.util.List,com.dullfan.module_main.ui.calendar.CalendarFragment,int) -> <init>
+    98:98:void access$initIndexData(com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1,java.lang.String) -> access$initIndexData
+    169:464:void initIndexData(java.lang.String) -> initIndexData
+    98:98:void onBind(androidx.databinding.ViewDataBinding,java.lang.Object,int) -> onBind
+    106:460:void onBind(androidx.databinding.ViewDataBinding,com.dullfan.module_main.ui.calendar.DateBean,int) -> onBind
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$$inlined$sortBy$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$$inlined$sortBy$1:
+# {"id":"sourceFile","fileName":"Comparisons.kt"}
+    102:322:int compare(java.lang.Object,java.lang.Object) -> compare
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    193:193:java.lang.Object invoke(java.lang.Object) -> invoke
+    194:368:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$1:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    368:368:java.lang.Object invoke() -> invoke
+    369:384:void invoke() -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    194:194:void <init>(java.util.List,java.util.List,com.dullfan.module_main.ui.calendar.CalendarFragment,com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1,java.lang.String,int) -> <init>
+    194:194:void onBind(androidx.databinding.ViewDataBinding,java.lang.Object,int) -> onBind
+    203:460:void onBind(androidx.databinding.ViewDataBinding,cn.leancloud.LCObject,int) -> onBind
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    227:227:java.lang.Object invoke() -> invoke
+    229:345:void invoke() -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$1:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    261:261:java.lang.Object invoke() -> invoke
+    261:261:void invoke() -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$2 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$2:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    263:263:java.lang.Object invoke() -> invoke
+    264:294:void invoke() -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$2$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$2$1:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    277:277:java.lang.Object invoke(java.lang.Object) -> invoke
+    278:279:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$2$1$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$2$1$1:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    279:279:java.lang.Object invoke(java.lang.Object) -> invoke
+    280:282:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$3 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$3:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    298:298:java.lang.Object invoke() -> invoke
+    299:300:void invoke() -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$3$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$3$1:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    299:299:java.lang.Object invoke() -> invoke
+    304:309:void invoke() -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$3$1$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$3$1$1:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    309:309:java.lang.Object invoke(java.lang.Object) -> invoke
+    310:311:void invoke(cn.leancloud.types.LCNull) -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$3$1$1$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$3$1$1$1:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    311:311:java.lang.Object invoke(java.lang.Object) -> invoke
+    312:315:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$4 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$initIndexData$3$calendarFocusedRvAdapter$1$onBind$2$4:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    343:343:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object) -> invoke
+    349:356:void invoke(android.view.View,com.dullfan.module_main.bean.FocusedExperienceBean,int) -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$onBind$2 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$2$onBind$rvAdapter$1$onBind$2:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    157:157:java.lang.Object invoke() -> invoke
+    158:159:void invoke() -> invoke
+com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$3 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initCalendarVp2$3:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    413:413:void <init>(com.dullfan.module_main.ui.calendar.CalendarFragment,java.util.List) -> <init>
+    415:429:void onPageSelected(int) -> onPageSelected
+com.dullfan.module_main.ui.calendar.CalendarFragment$initData$1 -> com.dullfan.module_main.ui.calendar.CalendarFragment$initData$1:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    58:58:java.lang.Object invoke(java.lang.Object) -> invoke
+    59:60:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.calendar.DateBean -> com.dullfan.module_main.ui.calendar.DateBean:
+# {"id":"sourceFile","fileName":"CalendarFragment.kt"}
+    459:459:void <init>(int,int,int) -> <init>
+    459:459:int getDay() -> getDay
+    459:459:int getMonth() -> getMonth
+    459:459:int getYear() -> getYear
+com.dullfan.module_main.ui.info.InFoFragment -> com.dullfan.module_main.ui.info.InFoFragment:
+# {"id":"sourceFile","fileName":"InFoFragment.kt"}
+    32:32:void <clinit>() -> <clinit>
+    29:159:void <init>() -> <init>
+    29:29:com.dullfan.base.view.LoadingView access$getDialogLogging(com.dullfan.module_main.ui.info.InFoFragment) -> access$getDialogLogging
+    29:29:androidx.activity.result.ActivityResultLauncher access$getRegisterForActivityResult$p(com.dullfan.module_main.ui.info.InFoFragment) -> access$getRegisterForActivityResult$p
+    29:29:boolean access$isInFoFragmentFlag$cp() -> access$isInFoFragmentFlag$cp
+    29:29:void access$setInFoFragmentFlag$cp(boolean) -> access$setInFoFragmentFlag$cp
+    42:42:com.dullfan.base.view.LoadingView getDialogLogging() -> getDialogLogging
+    40:40:com.dullfan.module_main.viewmodel.InfoViewModel getInfoViewModel() -> getInfoViewModel
+    35:35:com.dullfan.module_main.databinding.FragmentInFoBinding getViewDataBinding() -> getViewDataBinding
+    39:39:com.dullfan.module_main.viewmodel.HomeViewModel getViewModel() -> getViewModel
+    114:114:void initAvatar() -> initAvatar
+    132:141:void initData() -> initData
+    134:138:void initData$lambda-3(com.dullfan.module_main.ui.info.InFoFragment,cn.leancloud.LCUser) -> initData$lambda-3
+    142:142:void initData$lambda-4(com.dullfan.module_main.ui.info.InFoFragment,java.lang.String) -> initData$lambda-4
+    69:78:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    76:76:void onCreateView$lambda-1(com.dullfan.module_main.ui.info.InFoFragment,java.lang.String) -> onCreateView$lambda-1
+    82:83:void onPause() -> onPause
+    48:61:void registerForActivityResult$lambda-0(com.dullfan.module_main.ui.info.InFoFragment,java.util.Map) -> registerForActivityResult$lambda-0
+    90:95:void updateAvatar(java.lang.String) -> updateAvatar
+com.dullfan.module_main.ui.info.InFoFragment$Companion -> com.dullfan.module_main.ui.info.InFoFragment$Companion:
+# {"id":"sourceFile","fileName":"InFoFragment.kt"}
+    31:31:void <init>() -> <init>
+    32:32:boolean isInFoFragmentFlag() -> isInFoFragmentFlag
+    32:32:void setInFoFragmentFlag(boolean) -> setInFoFragmentFlag
+com.dullfan.module_main.ui.info.InFoFragment$dialogLogging$2 -> com.dullfan.module_main.ui.info.InFoFragment$dialogLogging$2:
+# {"id":"sourceFile","fileName":"InFoFragment.kt"}
+    42:42:java.lang.Object invoke() -> invoke
+    43:43:com.dullfan.base.view.LoadingView invoke() -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$initAvatar$1 -> com.dullfan.module_main.ui.info.InFoFragment$initAvatar$1:
+# {"id":"sourceFile","fileName":"InFoFragment.kt"}
+    114:114:java.lang.Object invoke() -> invoke
+    115:115:void invoke() -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$initAvatar$1$1 -> com.dullfan.module_main.ui.info.InFoFragment$initAvatar$1$1:
+# {"id":"sourceFile","fileName":"InFoFragment.kt"}
+    115:115:java.lang.Object invoke() -> invoke
+    116:116:void invoke() -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$initAvatar$1$2 -> com.dullfan.module_main.ui.info.InFoFragment$initAvatar$1$2:
+# {"id":"sourceFile","fileName":"InFoFragment.kt"}
+    115:115:java.lang.Object invoke() -> invoke
+    118:122:void invoke() -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$registerForActivityResult$1$1 -> com.dullfan.module_main.ui.info.InFoFragment$registerForActivityResult$1$1:
+# {"id":"sourceFile","fileName":"InFoFragment.kt"}
+    51:51:java.lang.Object invoke(java.lang.Object) -> invoke
+    52:57:void invoke(java.util.ArrayList) -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$1 -> com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$1:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    15:15:androidx.fragment.app.Fragment invoke() -> invoke
+    15:15:java.lang.Object invoke() -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$2 -> com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$2:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    18:18:androidx.lifecycle.ViewModelStore invoke() -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$3 -> com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$3:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    20:21:androidx.lifecycle.ViewModelProvider$Factory invoke() -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$4 -> com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$4:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    15:15:androidx.fragment.app.Fragment invoke() -> invoke
+    15:15:java.lang.Object invoke() -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$5 -> com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$5:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    18:18:androidx.lifecycle.ViewModelStore invoke() -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$6 -> com.dullfan.module_main.ui.info.InFoFragment$special$$inlined$viewModels$default$6:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    20:21:androidx.lifecycle.ViewModelProvider$Factory invoke() -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$updateAvatar$1$1 -> com.dullfan.module_main.ui.info.InFoFragment$updateAvatar$1$1:
+# {"id":"sourceFile","fileName":"InFoFragment.kt"}
+    95:95:java.lang.Object invoke(java.lang.Object) -> invoke
+    96:99:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$updateAvatar$1$2 -> com.dullfan.module_main.ui.info.InFoFragment$updateAvatar$1$2:
+# {"id":"sourceFile","fileName":"InFoFragment.kt"}
+    95:95:java.lang.Object invoke(java.lang.Object) -> invoke
+    103:105:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.info.InFoFragment$viewDataBinding$2 -> com.dullfan.module_main.ui.info.InFoFragment$viewDataBinding$2:
+# {"id":"sourceFile","fileName":"InFoFragment.kt"}
+    35:35:java.lang.Object invoke() -> invoke
+    36:36:com.dullfan.module_main.databinding.FragmentInFoBinding invoke() -> invoke
+com.dullfan.module_main.ui.project.AddProjectFragment -> com.dullfan.module_main.ui.project.AddProjectFragment:
+# {"id":"sourceFile","fileName":"AddProjectFragment.kt"}
+    25:196:void <init>() -> <init>
+    37:37:com.dullfan.base.view.LoadingView getDialogLogging() -> getDialogLogging
+    35:35:java.lang.String getRealPath() -> getRealPath
+    33:33:java.lang.String getSpinnerData() -> getSpinnerData
+    27:27:com.dullfan.module_main.databinding.FragmentAddProjectBinding getViewDataBinding() -> getViewDataBinding
+    31:31:com.dullfan.module_main.viewmodel.HomeViewModel getViewModel() -> getViewModel
+    77:82:void initBack() -> initBack
+    79:79:void initBack$lambda-1(com.dullfan.module_main.ui.project.AddProjectFragment,android.view.View) -> initBack$lambda-1
+    83:83:void initBack$lambda-2(com.dullfan.module_main.ui.project.AddProjectFragment,android.view.View) -> initBack$lambda-2
+    159:162:void initEmergDataencyLevel() -> initEmergDataencyLevel
+    132:132:void initSaveProject(cn.leancloud.LCObject) -> initSaveProject
+    145:149:void initSelectImage() -> initSelectImage
+    146:146:void initSelectImage$lambda-5(com.dullfan.module_main.ui.project.AddProjectFragment,android.view.View) -> initSelectImage$lambda-5
+    150:151:void initSelectImage$lambda-6(com.dullfan.module_main.ui.project.AddProjectFragment,android.view.View) -> initSelectImage$lambda-6
+    91:91:void initSubmit() -> initSubmit
+    92:123:void initSubmit$lambda-4(com.dullfan.module_main.ui.project.AddProjectFragment,android.view.View) -> initSubmit$lambda-4
+    119:120:void initSubmit$lambda-4$lambda-3(cn.leancloud.LCObject,com.dullfan.module_main.ui.project.AddProjectFragment,java.lang.String) -> initSubmit$lambda-4$lambda-3
+    66:70:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    46:58:void registerForActivityResult$lambda-0(com.dullfan.module_main.ui.project.AddProjectFragment,java.util.Map) -> registerForActivityResult$lambda-0
+    35:35:void setRealPath(java.lang.String) -> setRealPath
+    33:33:void setSpinnerData(java.lang.String) -> setSpinnerData
+com.dullfan.module_main.ui.project.AddProjectFragment$dialogLogging$2 -> com.dullfan.module_main.ui.project.AddProjectFragment$dialogLogging$2:
+# {"id":"sourceFile","fileName":"AddProjectFragment.kt"}
+    37:37:java.lang.Object invoke() -> invoke
+    38:38:com.dullfan.base.view.LoadingView invoke() -> invoke
+com.dullfan.module_main.ui.project.AddProjectFragment$initEmergDataencyLevel$1 -> com.dullfan.module_main.ui.project.AddProjectFragment$initEmergDataencyLevel$1:
+# {"id":"sourceFile","fileName":"AddProjectFragment.kt"}
+    162:162:java.lang.Object invoke(java.lang.Object) -> invoke
+    163:176:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.project.AddProjectFragment$initEmergDataencyLevel$1$1 -> com.dullfan.module_main.ui.project.AddProjectFragment$initEmergDataencyLevel$1$1:
+# {"id":"sourceFile","fileName":"AddProjectFragment.kt"}
+    176:176:void <init>(com.dullfan.module_main.ui.project.AddProjectFragment,java.util.List) -> <init>
+    183:183:void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+com.dullfan.module_main.ui.project.AddProjectFragment$initSaveProject$1 -> com.dullfan.module_main.ui.project.AddProjectFragment$initSaveProject$1:
+# {"id":"sourceFile","fileName":"AddProjectFragment.kt"}
+    132:132:java.lang.Object invoke(java.lang.Object) -> invoke
+    137:137:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.AddProjectFragment$initSaveProject$2 -> com.dullfan.module_main.ui.project.AddProjectFragment$initSaveProject$2:
+# {"id":"sourceFile","fileName":"AddProjectFragment.kt"}
+    132:132:java.lang.Object invoke(java.lang.Object) -> invoke
+    133:135:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.AddProjectFragment$registerForActivityResult$1$1 -> com.dullfan.module_main.ui.project.AddProjectFragment$registerForActivityResult$1$1:
+# {"id":"sourceFile","fileName":"AddProjectFragment.kt"}
+    49:49:java.lang.Object invoke(java.lang.Object) -> invoke
+    51:54:void invoke(java.util.ArrayList) -> invoke
+com.dullfan.module_main.ui.project.AddProjectFragment$special$$inlined$viewModels$default$1 -> com.dullfan.module_main.ui.project.AddProjectFragment$special$$inlined$viewModels$default$1:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    15:15:androidx.fragment.app.Fragment invoke() -> invoke
+    15:15:java.lang.Object invoke() -> invoke
+com.dullfan.module_main.ui.project.AddProjectFragment$special$$inlined$viewModels$default$2 -> com.dullfan.module_main.ui.project.AddProjectFragment$special$$inlined$viewModels$default$2:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    18:18:androidx.lifecycle.ViewModelStore invoke() -> invoke
+com.dullfan.module_main.ui.project.AddProjectFragment$special$$inlined$viewModels$default$3 -> com.dullfan.module_main.ui.project.AddProjectFragment$special$$inlined$viewModels$default$3:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    20:21:androidx.lifecycle.ViewModelProvider$Factory invoke() -> invoke
+com.dullfan.module_main.ui.project.AddProjectFragment$viewDataBinding$2 -> com.dullfan.module_main.ui.project.AddProjectFragment$viewDataBinding$2:
+# {"id":"sourceFile","fileName":"AddProjectFragment.kt"}
+    27:27:java.lang.Object invoke() -> invoke
+    28:28:com.dullfan.module_main.databinding.FragmentAddProjectBinding invoke() -> invoke
+com.dullfan.module_main.ui.project.AddProjectTaskFragment -> com.dullfan.module_main.ui.project.AddProjectTaskFragment:
+# {"id":"sourceFile","fileName":"AddProjectTaskFragment.kt"}
+    19:20:void <init>() -> <init>
+    20:20:com.dullfan.module_main.databinding.FragmentAddProjectTaskBinding getBinding() -> getBinding
+    23:23:int getSelectPosition() -> getSelectPosition
+    75:102:void initSpinner() -> initSpinner
+    50:50:void initSubmit() -> initSubmit
+    51:62:void initSubmit$lambda-2(com.dullfan.module_main.ui.project.AddProjectTaskFragment,android.view.View) -> initSubmit$lambda-2
+    31:43:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    32:32:void onCreateView$lambda-0(com.dullfan.module_main.ui.project.AddProjectTaskFragment,android.view.View) -> onCreateView$lambda-0
+    35:35:void onCreateView$lambda-1(com.dullfan.module_main.ui.project.AddProjectTaskFragment,android.view.View) -> onCreateView$lambda-1
+    23:23:void setSelectPosition(int) -> setSelectPosition
+com.dullfan.module_main.ui.project.AddProjectTaskFragment$binding$2 -> com.dullfan.module_main.ui.project.AddProjectTaskFragment$binding$2:
+# {"id":"sourceFile","fileName":"AddProjectTaskFragment.kt"}
+    20:20:java.lang.Object invoke() -> invoke
+    21:21:com.dullfan.module_main.databinding.FragmentAddProjectTaskBinding invoke() -> invoke
+com.dullfan.module_main.ui.project.AddProjectTaskFragment$initSpinner$2 -> com.dullfan.module_main.ui.project.AddProjectTaskFragment$initSpinner$2:
+# {"id":"sourceFile","fileName":"AddProjectTaskFragment.kt"}
+    85:85:void <init>(com.dullfan.module_main.ui.project.AddProjectTaskFragment) -> <init>
+    92:92:void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+com.dullfan.module_main.ui.project.AddProjectTaskFragment$initSubmit$1$1 -> com.dullfan.module_main.ui.project.AddProjectTaskFragment$initSubmit$1$1:
+# {"id":"sourceFile","fileName":"AddProjectTaskFragment.kt"}
+    62:62:java.lang.Object invoke(java.lang.Object) -> invoke
+    66:66:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.AddProjectTaskFragment$initSubmit$1$2 -> com.dullfan.module_main.ui.project.AddProjectTaskFragment$initSubmit$1$2:
+# {"id":"sourceFile","fileName":"AddProjectTaskFragment.kt"}
+    62:62:java.lang.Object invoke(java.lang.Object) -> invoke
+    63:64:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment -> com.dullfan.module_main.ui.project.ProjectDetailsFragment:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    39:414:void <init>() -> <init>
+    39:39:boolean access$getAllTaskFragmentIsShow$cp() -> access$getAllTaskFragmentIsShow$cp
+    39:39:void access$initIntroduce(com.dullfan.module_main.ui.project.ProjectDetailsFragment) -> access$initIntroduce
+    39:39:void access$onBack(com.dullfan.module_main.ui.project.ProjectDetailsFragment) -> access$onBack
+    39:39:void access$rvSelectColor(com.dullfan.module_main.ui.project.ProjectDetailsFragment,com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBinding,int,int) -> access$rvSelectColor
+    39:39:void access$setAllTaskFragmentIsShow$cp(boolean) -> access$setAllTaskFragmentIsShow$cp
+    236:250:void arrowDialog() -> arrowDialog
+    239:247:void arrowDialog$lambda-5(com.dullfan.module_main.ui.project.ProjectDetailsFragment,android.content.DialogInterface,int) -> arrowDialog$lambda-5
+    40:40:com.dullfan.base.adapter.BaseRvAdapter getBaseRvAdapter() -> getBaseRvAdapter
+    46:46:com.dullfan.base.view.LoadingView getDialogLogging() -> getDialogLogging
+    50:50:java.lang.String getEmergencyLevelObjectId() -> getEmergencyLevelObjectId
+    59:59:androidx.activity.result.ActivityResultLauncher getRegisterForActivityResult() -> getRegisterForActivityResult
+    42:42:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding getViewDataBinding() -> getViewDataBinding
+    49:49:com.dullfan.module_main.viewmodel.HomeViewModel getViewModel() -> getViewModel
+    159:159:void initAvatar() -> initAvatar
+    309:373:void initDrawer() -> initDrawer
+    183:187:void initEditIntroduce() -> initEditIntroduce
+    188:227:void initEditIntroduce$lambda-4(com.dullfan.module_main.ui.project.ProjectDetailsFragment,android.view.View) -> initEditIntroduce$lambda-4
+    189:189:void initEditIntroduce$lambda-4$lambda-2(com.dullfan.module_main.ui.project.ProjectDetailsFragment,android.view.View) -> initEditIntroduce$lambda-4$lambda-2
+    192:192:void initEditIntroduce$lambda-4$lambda-3(com.dullfan.module_main.ui.project.ProjectDetailsFragment,android.view.View) -> initEditIntroduce$lambda-4$lambda-3
+    257:285:void initIntroduce() -> initIntroduce
+    112:117:void onBack() -> onBack
+    84:105:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    101:101:void onCreateView$lambda-1(com.dullfan.module_main.ui.project.ProjectDetailsFragment,java.lang.String) -> onCreateView$lambda-1
+    61:77:void registerForActivityResult$lambda-0(com.dullfan.module_main.ui.project.ProjectDetailsFragment,java.util.Map) -> registerForActivityResult$lambda-0
+    403:405:void rvSelectColor(com.dullfan.module_main.databinding.ItemProjectDetailsDrawerLayoutRvBinding,int,int) -> rvSelectColor
+    40:40:void setBaseRvAdapter(com.dullfan.base.adapter.BaseRvAdapter) -> setBaseRvAdapter
+    50:50:void setEmergencyLevelObjectId(java.lang.String) -> setEmergencyLevelObjectId
+    136:139:void updateAvatar(java.lang.String) -> updateAvatar
+    125:126:void updateProjectData() -> updateProjectData
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$Companion -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$Companion:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    52:52:void <init>() -> <init>
+    53:53:boolean getAllTaskFragmentIsShow() -> getAllTaskFragmentIsShow
+    53:53:void setAllTaskFragmentIsShow(boolean) -> setAllTaskFragmentIsShow
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$dialogLogging$2 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$dialogLogging$2:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    46:46:java.lang.Object invoke() -> invoke
+    47:47:com.dullfan.base.view.LoadingView invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$initAvatar$1 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$initAvatar$1:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    159:159:java.lang.Object invoke() -> invoke
+    160:160:void invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$initAvatar$1$1 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$initAvatar$1$1:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    160:160:java.lang.Object invoke() -> invoke
+    161:165:void invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$initAvatar$1$2 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$initAvatar$1$2:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    160:160:java.lang.Object invoke() -> invoke
+    167:170:void invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$initDrawer$1 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$initDrawer$1:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    314:314:void <init>(java.util.ArrayList,com.dullfan.module_main.ui.project.ProjectDetailsFragment,int) -> <init>
+    314:314:void onBind(androidx.databinding.ViewDataBinding,java.lang.Object,int) -> onBind
+    323:341:void onBind(androidx.databinding.ViewDataBinding,java.lang.String,int) -> onBind
+    342:363:void onBind$lambda-0(com.dullfan.module_main.ui.project.ProjectDetailsFragment$initDrawer$1,int,com.dullfan.module_main.ui.project.ProjectDetailsFragment,android.view.View) -> onBind$lambda-0
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$initDrawer$2 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$initDrawer$2:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    373:373:void <init>(com.dullfan.module_main.ui.project.ProjectDetailsFragment) -> <init>
+    376:378:void onDrawerSlide(android.view.View,float) -> onDrawerSlide
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$initEditIntroduce$1$3 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$initEditIntroduce$1$3:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    211:211:java.lang.Object invoke(java.lang.Object) -> invoke
+    212:215:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$initEditIntroduce$1$4 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$initEditIntroduce$1$4:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    211:211:java.lang.Object invoke(java.lang.Object) -> invoke
+    217:220:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$initIntroduce$1 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$initIntroduce$1:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    285:285:java.lang.Object invoke(java.lang.Object) -> invoke
+    287:411:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$initIntroduce$1$2 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$initIntroduce$1$2:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    298:298:java.lang.Object invoke(java.lang.Object) -> invoke
+    299:299:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$onCreateView$1 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$onCreateView$1:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    85:85:java.lang.Object invoke() -> invoke
+    86:86:void invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$onCreateView$2 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$onCreateView$2:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    89:89:java.lang.Object invoke() -> invoke
+    90:90:void invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$registerForActivityResult$1$1 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$registerForActivityResult$1$1:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    64:64:java.lang.Object invoke(java.lang.Object) -> invoke
+    66:72:void invoke(java.util.ArrayList) -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$special$$inlined$viewModels$default$1 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$special$$inlined$viewModels$default$1:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    15:15:androidx.fragment.app.Fragment invoke() -> invoke
+    15:15:java.lang.Object invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$special$$inlined$viewModels$default$2 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$special$$inlined$viewModels$default$2:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    18:18:androidx.lifecycle.ViewModelStore invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$special$$inlined$viewModels$default$3 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$special$$inlined$viewModels$default$3:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    20:21:androidx.lifecycle.ViewModelProvider$Factory invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$updateAvatar$1 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$updateAvatar$1:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    139:139:java.lang.Object invoke(java.lang.Object) -> invoke
+    140:144:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$updateAvatar$2 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$updateAvatar$2:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    139:139:java.lang.Object invoke(java.lang.Object) -> invoke
+    148:151:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$updateProjectData$1 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$updateProjectData$1:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    126:126:java.lang.Object invoke(java.lang.Object) -> invoke
+    127:128:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.ProjectDetailsFragment$viewDataBinding$2 -> com.dullfan.module_main.ui.project.ProjectDetailsFragment$viewDataBinding$2:
+# {"id":"sourceFile","fileName":"ProjectDetailsFragment.kt"}
+    42:42:java.lang.Object invoke() -> invoke
+    43:43:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectFragment -> com.dullfan.module_main.ui.project.ProjectFragment:
+# {"id":"sourceFile","fileName":"ProjectFragment.kt"}
+    35:201:void <init>() -> <init>
+    35:35:com.dullfan.module_main.ui.project.ProjectFragment access$getInstance$cp() -> access$getInstance$cp
+    35:35:com.dullfan.module_main.databinding.FragmentProjectBinding access$getViewDataBinding(com.dullfan.module_main.ui.project.ProjectFragment) -> access$getViewDataBinding
+    35:35:void access$setInstance$cp(com.dullfan.module_main.ui.project.ProjectFragment) -> access$setInstance$cp
+    60:60:boolean getFlag() -> getFlag
+    59:59:boolean getFloatButtonIsFlag() -> getFloatButtonIsFlag
+    81:81:com.dullfan.base.adapter.BaseRvAdapter getRvAdapter() -> getRvAdapter
+    53:53:com.dullfan.module_main.databinding.FragmentProjectBinding getViewDataBinding() -> getViewDataBinding
+    57:57:com.dullfan.module_main.viewmodel.HomeViewModel getViewModel() -> getViewModel
+    158:158:void initBottomSheetDialog() -> initBottomSheetDialog
+    159:169:void initBottomSheetDialog$lambda-2(com.dullfan.module_main.ui.project.ProjectFragment,android.view.View) -> initBottomSheetDialog$lambda-2
+    120:140:void initRv() -> initRv
+    141:149:void initRv$lambda-1(com.dullfan.module_main.ui.project.ProjectFragment,android.view.View,int,int,int,int) -> initRv$lambda-1
+    67:78:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    77:77:void onCreateView$lambda-0(com.dullfan.module_main.ui.project.ProjectFragment,com.scwang.smart.refresh.layout.api.RefreshLayout) -> onCreateView$lambda-0
+    194:195:void onDestroy() -> onDestroy
+    188:190:void onResume() -> onResume
+    60:60:void setFlag(boolean) -> setFlag
+    59:59:void setFloatButtonIsFlag(boolean) -> setFloatButtonIsFlag
+com.dullfan.module_main.ui.project.ProjectFragment$Companion -> com.dullfan.module_main.ui.project.ProjectFragment$Companion:
+# {"id":"sourceFile","fileName":"ProjectFragment.kt"}
+    37:37:void <init>() -> <init>
+    45:48:com.dullfan.module_main.ui.project.ProjectFragment getInstance() -> getInstance
+    40:40:com.dullfan.module_main.ui.project.ProjectFragment newInstance() -> newInstance
+com.dullfan.module_main.ui.project.ProjectFragment$initBottomSheetDialog$1$1 -> com.dullfan.module_main.ui.project.ProjectFragment$initBottomSheetDialog$1$1:
+# {"id":"sourceFile","fileName":"ProjectFragment.kt"}
+    169:169:java.lang.Object invoke(java.lang.Object) -> invoke
+    172:176:void invoke(int) -> invoke
+com.dullfan.module_main.ui.project.ProjectFragment$initRv$1 -> com.dullfan.module_main.ui.project.ProjectFragment$initRv$1:
+# {"id":"sourceFile","fileName":"ProjectFragment.kt"}
+    125:125:java.lang.Object invoke(java.lang.Object) -> invoke
+    125:125:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.ProjectFragment$initRv$2 -> com.dullfan.module_main.ui.project.ProjectFragment$initRv$2:
+# {"id":"sourceFile","fileName":"ProjectFragment.kt"}
+    125:125:java.lang.Object invoke(java.lang.Object) -> invoke
+    127:135:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.project.ProjectFragment$rvAdapter$1 -> com.dullfan.module_main.ui.project.ProjectFragment$rvAdapter$1:
+# {"id":"sourceFile","fileName":"ProjectFragment.kt"}
+    81:81:void <init>(com.dullfan.module_main.ui.project.ProjectFragment,int,java.util.ArrayList) -> <init>
+    81:81:void onBind(androidx.databinding.ViewDataBinding,java.lang.Object,int) -> onBind
+    87:107:void onBind(androidx.databinding.ViewDataBinding,cn.leancloud.LCObject,int) -> onBind
+    108:109:void onBind$lambda-0(cn.leancloud.LCObject,com.dullfan.module_main.ui.project.ProjectFragment,android.view.View) -> onBind$lambda-0
+com.dullfan.module_main.ui.project.ProjectFragment$special$$inlined$viewModels$default$1 -> com.dullfan.module_main.ui.project.ProjectFragment$special$$inlined$viewModels$default$1:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    15:15:androidx.fragment.app.Fragment invoke() -> invoke
+    15:15:java.lang.Object invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectFragment$special$$inlined$viewModels$default$2 -> com.dullfan.module_main.ui.project.ProjectFragment$special$$inlined$viewModels$default$2:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    18:18:androidx.lifecycle.ViewModelStore invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectFragment$special$$inlined$viewModels$default$3 -> com.dullfan.module_main.ui.project.ProjectFragment$special$$inlined$viewModels$default$3:
+# {"id":"sourceFile","fileName":"FragmentViewModelLazy.kt"}
+    17:17:java.lang.Object invoke() -> invoke
+    20:21:androidx.lifecycle.ViewModelProvider$Factory invoke() -> invoke
+com.dullfan.module_main.ui.project.ProjectFragment$viewDataBinding$2 -> com.dullfan.module_main.ui.project.ProjectFragment$viewDataBinding$2:
+# {"id":"sourceFile","fileName":"ProjectFragment.kt"}
+    53:53:java.lang.Object invoke() -> invoke
+    54:54:com.dullfan.module_main.databinding.FragmentProjectBinding invoke() -> invoke
+com.dullfan.module_main.ui.project.details.AddTaskFragment -> com.dullfan.module_main.ui.project.details.AddTaskFragment:
+# {"id":"sourceFile","fileName":"AddTaskFragment.kt"}
+    24:25:void <init>() -> <init>
+    31:32:void <init>(com.dullfan.module_main.databinding.FragmentProjectDetailsBinding) -> <init>
+    24:24:void access$back(com.dullfan.module_main.ui.project.details.AddTaskFragment) -> access$back
+    88:92:void back() -> back
+    25:25:com.dullfan.module_main.databinding.FragmentAddTaskBinding getBinding() -> getBinding
+    29:29:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding getFragmentViewDataBinding() -> getFragmentViewDataBinding
+    51:51:void initAdd() -> initAdd
+    52:63:void initAdd$lambda-0(com.dullfan.module_main.ui.project.details.AddTaskFragment,android.view.View) -> initAdd$lambda-0
+    76:82:void initSet() -> initSet
+    80:80:void initSet$lambda-1(com.dullfan.module_main.ui.project.details.AddTaskFragment,android.view.View) -> initSet$lambda-1
+    83:83:void initSet$lambda-2(com.dullfan.module_main.ui.project.details.AddTaskFragment,android.view.View) -> initSet$lambda-2
+    41:44:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    97:99:void onDestroy() -> onDestroy
+    29:29:void setFragmentViewDataBinding(com.dullfan.module_main.databinding.FragmentProjectDetailsBinding) -> setFragmentViewDataBinding
+com.dullfan.module_main.ui.project.details.AddTaskFragment$binding$2 -> com.dullfan.module_main.ui.project.details.AddTaskFragment$binding$2:
+# {"id":"sourceFile","fileName":"AddTaskFragment.kt"}
+    25:25:java.lang.Object invoke() -> invoke
+    26:26:com.dullfan.module_main.databinding.FragmentAddTaskBinding invoke() -> invoke
+com.dullfan.module_main.ui.project.details.AddTaskFragment$initAdd$1$1 -> com.dullfan.module_main.ui.project.details.AddTaskFragment$initAdd$1$1:
+# {"id":"sourceFile","fileName":"AddTaskFragment.kt"}
+    63:63:java.lang.Object invoke(java.lang.Object) -> invoke
+    67:67:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.details.AddTaskFragment$initAdd$1$2 -> com.dullfan.module_main.ui.project.details.AddTaskFragment$initAdd$1$2:
+# {"id":"sourceFile","fileName":"AddTaskFragment.kt"}
+    63:63:java.lang.Object invoke(java.lang.Object) -> invoke
+    64:65:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment -> com.dullfan.module_main.ui.project.details.FocusedFragment:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    50:50:void <clinit>() -> <clinit>
+    35:101:void <init>() -> <init>
+    42:43:void <init>(com.dullfan.module_main.databinding.FragmentProjectDetailsBinding) -> <init>
+    35:35:java.util.ArrayList access$getExperienceContentList$cp() -> access$getExperienceContentList$cp
+    35:35:boolean access$getFocusedFragmentFlag$cp() -> access$getFocusedFragmentFlag$cp
+    35:35:long access$getInTime$cp() -> access$getInTime$cp
+    35:35:long access$getPauseDuration$cp() -> access$getPauseDuration$cp
+    35:35:void access$setExperienceContentList$cp(java.util.ArrayList) -> access$setExperienceContentList$cp
+    35:35:void access$setFocusedFragmentFlag$cp(boolean) -> access$setFocusedFragmentFlag$cp
+    35:35:void access$setInTime$cp(long) -> access$setInTime$cp
+    35:35:void access$setPauseDuration$cp(long) -> access$setPauseDuration$cp
+    400:408:void destroyFinish() -> destroyFinish
+    93:93:boolean getAlwaysOnFlag() -> getAlwaysOnFlag
+    36:36:com.dullfan.module_main.databinding.FragmentFocusedBinding getBinding() -> getBinding
+    97:97:android.content.SharedPreferences$Editor getEdit() -> getEdit
+    40:40:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding getFragmentViewDataBinding() -> getFragmentViewDataBinding
+    62:62:android.os.Handler getHandler() -> getHandler
+    53:53:int getMin() -> getMin
+    100:100:java.util.ArrayList getMp3List() -> getMp3List
+    60:60:boolean getPauseFlag() -> getPauseFlag
+    56:56:int getPauseMin() -> getPauseMin
+    57:57:int getPauseSecond() -> getPauseSecond
+    101:101:android.media.MediaPlayer getPlayer() -> getPlayer
+    54:54:int getSecond() -> getSecond
+    94:94:android.content.SharedPreferences getSharedPreferences() -> getSharedPreferences
+    202:202:void initAdd() -> initAdd
+    257:257:void initAlwaysOn() -> initAlwaysOn
+    329:374:void initData() -> initData
+    123:145:void initMusic() -> initMusic
+    238:238:void initPause() -> initPause
+    380:392:void initSetting() -> initSetting
+    280:280:void initTermination() -> initTermination
+    108:116:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    412:413:void onDestroyView() -> onDestroyView
+    272:273:void onResume() -> onResume
+    93:93:void setAlwaysOnFlag(boolean) -> setAlwaysOnFlag
+    40:40:void setFragmentViewDataBinding(com.dullfan.module_main.databinding.FragmentProjectDetailsBinding) -> setFragmentViewDataBinding
+    53:53:void setMin(int) -> setMin
+    100:100:void setMp3List(java.util.ArrayList) -> setMp3List
+    60:60:void setPauseFlag(boolean) -> setPauseFlag
+    56:56:void setPauseMin(int) -> setPauseMin
+    57:57:void setPauseSecond(int) -> setPauseSecond
+    101:101:void setPlayer(android.media.MediaPlayer) -> setPlayer
+    54:54:void setSecond(int) -> setSecond
+com.dullfan.module_main.ui.project.details.FocusedFragment$Companion -> com.dullfan.module_main.ui.project.details.FocusedFragment$Companion:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    46:46:void <init>() -> <init>
+    50:50:java.util.ArrayList getExperienceContentList() -> getExperienceContentList
+    47:47:boolean getFocusedFragmentFlag() -> getFocusedFragmentFlag
+    48:48:long getInTime() -> getInTime
+    49:49:long getPauseDuration() -> getPauseDuration
+    50:50:void setExperienceContentList(java.util.ArrayList) -> setExperienceContentList
+    47:47:void setFocusedFragmentFlag(boolean) -> setFocusedFragmentFlag
+    48:48:void setInTime(long) -> setInTime
+    49:49:void setPauseDuration(long) -> setPauseDuration
+com.dullfan.module_main.ui.project.details.FocusedFragment$binding$2 -> com.dullfan.module_main.ui.project.details.FocusedFragment$binding$2:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    36:36:java.lang.Object invoke() -> invoke
+    37:37:com.dullfan.module_main.databinding.FragmentFocusedBinding invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$edit$2 -> com.dullfan.module_main.ui.project.details.FocusedFragment$edit$2:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    97:97:java.lang.Object invoke() -> invoke
+    98:98:android.content.SharedPreferences$Editor invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$handler$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$handler$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    62:62:void <init>(com.dullfan.module_main.ui.project.details.FocusedFragment,android.os.Looper) -> <init>
+    65:89:void handleMessage(android.os.Message) -> handleMessage
+com.dullfan.module_main.ui.project.details.FocusedFragment$initAdd$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initAdd$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    202:202:java.lang.Object invoke() -> invoke
+    203:228:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initAdd$1$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initAdd$1$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    212:212:java.lang.Object invoke() -> invoke
+    213:213:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initAdd$1$2 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initAdd$1$2:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    216:216:java.lang.Object invoke() -> invoke
+    217:225:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initAlwaysOn$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initAlwaysOn$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    257:257:java.lang.Object invoke() -> invoke
+    258:267:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initData$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initData$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    330:330:java.lang.Object invoke(java.lang.Object) -> invoke
+    331:334:void invoke(java.lang.Integer) -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initData$1$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initData$1$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    334:334:java.lang.Object invoke(java.lang.Object) -> invoke
+    335:336:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initData$2 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initData$2:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    341:341:java.lang.Object invoke(java.lang.Object) -> invoke
+    342:346:void invoke(java.lang.Integer) -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initData$2$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initData$2$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    346:346:java.lang.Object invoke(java.lang.Object) -> invoke
+    347:347:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initMusic$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initMusic$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    145:145:java.lang.Object invoke() -> invoke
+    146:194:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initMusic$1$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initMusic$1$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    149:150:void <init>(com.dullfan.module_main.ui.project.details.FocusedFragment,java.util.ArrayList,java.util.ArrayList,int) -> <init>
+    150:150:int getSelectedPosition() -> getSelectedPosition
+    149:149:void onBind(androidx.databinding.ViewDataBinding,java.lang.Object,int) -> onBind
+    156:170:void onBind(androidx.databinding.ViewDataBinding,java.lang.String,int) -> onBind
+    150:150:void setSelectedPosition(int) -> setSelectedPosition
+com.dullfan.module_main.ui.project.details.FocusedFragment$initMusic$1$1$onBind$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initMusic$1$1$onBind$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    170:170:java.lang.Object invoke() -> invoke
+    171:189:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initPause$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initPause$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    238:238:java.lang.Object invoke() -> invoke
+    239:249:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initTermination$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initTermination$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    280:280:java.lang.Object invoke() -> invoke
+    281:319:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initTermination$1$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initTermination$1$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    288:288:java.lang.Object invoke() -> invoke
+    289:289:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initTermination$1$2 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initTermination$1$2:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    292:292:java.lang.Object invoke() -> invoke
+    293:306:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initTermination$1$2$1 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initTermination$1$2$1:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    306:306:java.lang.Object invoke(java.lang.Object) -> invoke
+    307:307:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$initTermination$1$2$2 -> com.dullfan.module_main.ui.project.details.FocusedFragment$initTermination$1$2$2:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    306:306:java.lang.Object invoke(java.lang.Object) -> invoke
+    309:312:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.details.FocusedFragment$sharedPreferences$2 -> com.dullfan.module_main.ui.project.details.FocusedFragment$sharedPreferences$2:
+# {"id":"sourceFile","fileName":"FocusedFragment.kt"}
+    94:94:java.lang.Object invoke() -> invoke
+    95:95:android.content.SharedPreferences invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    41:46:void <init>() -> <init>
+    41:41:void access$initData(com.dullfan.module_main.ui.project.details.TaskFocusedFragment,java.lang.String,boolean) -> access$initData
+    42:42:com.dullfan.module_main.databinding.FragmentTaskFocusedBinding getBinding() -> getBinding
+    46:46:com.dullfan.base.view.MyRecyclerItem getMyRecyclerItem() -> getMyRecyclerItem
+    50:50:boolean getSortFlag() -> getSortFlag
+    109:117:void initData(java.lang.String,boolean) -> initData
+    64:64:void initSort() -> initSort
+    80:81:void initSpinner() -> initSpinner
+    56:60:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    50:50:void setSortFlag(boolean) -> setSortFlag
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$binding$2 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$binding$2:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    42:42:java.lang.Object invoke() -> invoke
+    43:43:com.dullfan.module_main.databinding.FragmentTaskFocusedBinding invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$1 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$1:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    117:117:java.lang.Object invoke(java.lang.Object) -> invoke
+    118:118:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    117:117:java.lang.Object invoke(java.lang.Object) -> invoke
+    121:272:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    138:138:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object) -> invoke
+    143:164:void invoke(android.view.View,com.dullfan.base.bean.RecyclerViewItemBean,int) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    164:164:java.lang.Object invoke() -> invoke
+    166:251:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$1 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$1:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    189:189:java.lang.Object invoke() -> invoke
+    189:189:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$2 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$2:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    191:191:java.lang.Object invoke() -> invoke
+    192:212:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$2$1 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$2$1:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    201:201:java.lang.Object invoke(java.lang.Object) -> invoke
+    202:203:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$3 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$3:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    216:216:java.lang.Object invoke() -> invoke
+    217:217:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$3$1 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$3$1:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    217:217:java.lang.Object invoke() -> invoke
+    218:222:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$3$1$1 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$3$1$1:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    222:222:java.lang.Object invoke(java.lang.Object) -> invoke
+    223:225:void invoke(cn.leancloud.types.LCNull) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$4 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initData$2$2$1$4:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    249:249:java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object) -> invoke
+    255:260:void invoke(android.view.View,com.dullfan.module_main.bean.FocusedExperienceBean,int) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initSort$1 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initSort$1:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    64:64:java.lang.Object invoke() -> invoke
+    65:74:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initSpinner$1 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$initSpinner$1:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    81:81:java.lang.Object invoke(java.lang.Object) -> invoke
+    82:273:void invoke(java.util.List) -> invoke
+    98:101:void invoke$lambda-1(java.util.List,com.dullfan.module_main.ui.project.details.TaskFocusedFragment,android.widget.AdapterView,android.view.View,int,long) -> invoke$lambda-1
+com.dullfan.module_main.ui.project.details.TaskFocusedFragment$myRecyclerItem$2 -> com.dullfan.module_main.ui.project.details.TaskFocusedFragment$myRecyclerItem$2:
+# {"id":"sourceFile","fileName":"TaskFocusedFragment.kt"}
+    46:46:java.lang.Object invoke() -> invoke
+    47:47:com.dullfan.base.view.MyRecyclerItem invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment -> com.dullfan.module_main.ui.project.details.TaskFragment:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    30:47:void <init>() -> <init>
+    33:34:void <init>(com.dullfan.module_main.databinding.FragmentProjectDetailsBinding) -> <init>
+    30:30:boolean access$getTaskFragmentIsShow$cp() -> access$getTaskFragmentIsShow$cp
+    30:30:void access$initDialogLayout(com.dullfan.module_main.ui.project.details.TaskFragment,com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding,com.google.android.material.bottomsheet.BottomSheetDialog,cn.leancloud.LCObject) -> access$initDialogLayout
+    30:30:void access$initRv(com.dullfan.module_main.ui.project.details.TaskFragment) -> access$initRv
+    30:30:void access$setTaskFragmentIsShow$cp(boolean) -> access$setTaskFragmentIsShow$cp
+    46:46:com.dullfan.base.adapter.BaseRvAdapter getBaseAdapter() -> getBaseAdapter
+    31:31:com.dullfan.module_main.databinding.FragmentProjectDetailsBinding getFragmentViewDataBinding() -> getFragmentViewDataBinding
+    37:37:com.dullfan.module_main.databinding.FragmentTaskBinding getViewDataBinding() -> getViewDataBinding
+    240:240:void initAddTask() -> initAddTask
+    241:243:void initAddTask$lambda-6(com.dullfan.module_main.ui.project.details.TaskFragment,android.view.View) -> initAddTask$lambda-6
+    98:199:void initDialogLayout(com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding,com.google.android.material.bottomsheet.BottomSheetDialog,cn.leancloud.LCObject) -> initDialogLayout
+    99:99:void initDialogLayout$lambda-0(com.google.android.material.bottomsheet.BottomSheetDialog,android.view.View) -> initDialogLayout$lambda-0
+    111:137:void initDialogLayout$lambda-1(com.dullfan.module_main.databinding.DialogTaskDetailsLayoutBinding,com.dullfan.module_main.ui.project.details.TaskFragment,cn.leancloud.LCObject,android.view.View) -> initDialogLayout$lambda-1
+    144:146:void initDialogLayout$lambda-2(cn.leancloud.LCObject,com.google.android.material.bottomsheet.BottomSheetDialog,com.dullfan.module_main.ui.project.details.TaskFragment,android.view.View) -> initDialogLayout$lambda-2
+    155:178:void initDialogLayout$lambda-5(com.dullfan.module_main.ui.project.details.TaskFragment,cn.leancloud.LCObject,com.google.android.material.bottomsheet.BottomSheetDialog,android.view.View) -> initDialogLayout$lambda-5
+    160:177:void initDialogLayout$lambda-5$lambda-4(cn.leancloud.LCObject,com.dullfan.module_main.ui.project.details.TaskFragment,com.google.android.material.bottomsheet.BottomSheetDialog,android.content.DialogInterface,int) -> initDialogLayout$lambda-5$lambda-4
+    223:227:void initRv() -> initRv
+    216:219:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    249:253:void onDestroy() -> onDestroy
+    31:31:void setFragmentViewDataBinding(com.dullfan.module_main.databinding.FragmentProjectDetailsBinding) -> setFragmentViewDataBinding
+com.dullfan.module_main.ui.project.details.TaskFragment$Companion -> com.dullfan.module_main.ui.project.details.TaskFragment$Companion:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    41:41:void <init>() -> <init>
+    43:43:boolean getTaskFragmentIsShow() -> getTaskFragmentIsShow
+    43:43:void setTaskFragmentIsShow(boolean) -> setTaskFragmentIsShow
+com.dullfan.module_main.ui.project.details.TaskFragment$baseAdapter$1 -> com.dullfan.module_main.ui.project.details.TaskFragment$baseAdapter$1:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    47:47:void <init>(com.dullfan.module_main.ui.project.details.TaskFragment,int,java.util.List) -> <init>
+    47:47:void onBind(androidx.databinding.ViewDataBinding,java.lang.Object,int) -> onBind
+    49:80:void onBind(androidx.databinding.ViewDataBinding,cn.leancloud.LCObject,int) -> onBind
+    65:73:void onBind$lambda-0(com.dullfan.module_main.ui.project.details.TaskFragment,cn.leancloud.LCObject,android.view.View) -> onBind$lambda-0
+    81:84:void onBind$lambda-1(cn.leancloud.LCObject,com.dullfan.module_main.ui.project.details.TaskFragment,android.view.View) -> onBind$lambda-1
+com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$2$1 -> com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$2$1:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    123:123:java.lang.Object invoke(java.lang.Object) -> invoke
+    124:125:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$2$2 -> com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$2$2:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    123:123:java.lang.Object invoke(java.lang.Object) -> invoke
+    127:131:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$3$1 -> com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$3$1:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    146:146:java.lang.Object invoke(java.lang.Object) -> invoke
+    147:149:void invoke(cn.leancloud.LCObject) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$4$2$1 -> com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$4$2$1:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    161:161:java.lang.Object invoke(java.lang.Object) -> invoke
+    162:166:void invoke(cn.leancloud.types.LCNull) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$4$2$1$1 -> com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$4$2$1$1:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    166:166:java.lang.Object invoke(java.lang.Object) -> invoke
+    167:167:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$4$2$1$2 -> com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$4$2$1$2:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    166:166:java.lang.Object invoke(java.lang.Object) -> invoke
+    170:170:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$5 -> com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$5:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    181:181:java.lang.Object invoke() -> invoke
+    182:186:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$6 -> com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$6:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    189:189:java.lang.Object invoke() -> invoke
+    190:194:void invoke() -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$7 -> com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$7:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    199:199:java.lang.Object invoke(java.lang.Object) -> invoke
+    200:200:void invoke(java.lang.Throwable) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$8 -> com.dullfan.module_main.ui.project.details.TaskFragment$initDialogLayout$8:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    199:199:java.lang.Object invoke(java.lang.Object) -> invoke
+    202:257:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$initRv$1 -> com.dullfan.module_main.ui.project.details.TaskFragment$initRv$1:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    227:227:java.lang.Object invoke(java.lang.Object) -> invoke
+    228:234:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.project.details.TaskFragment$viewDataBinding$2 -> com.dullfan.module_main.ui.project.details.TaskFragment$viewDataBinding$2:
+# {"id":"sourceFile","fileName":"TaskFragment.kt"}
+    37:37:java.lang.Object invoke() -> invoke
+    38:38:com.dullfan.module_main.databinding.FragmentTaskBinding invoke() -> invoke
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    33:34:void <init>() -> <init>
+    33:33:void access$initCumulativeFocus(com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.List) -> access$initCumulativeFocus
+    33:33:void access$initFocusTimeDistribution(com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.List) -> access$initFocusTimeDistribution
+    33:33:void access$initFocusTimeDistributionFinish(com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.HashMap) -> access$initFocusTimeDistributionFinish
+    33:33:void access$initHashMap(com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,cn.leancloud.LCObject,cn.leancloud.LCObject,java.util.HashMap) -> access$initHashMap
+    33:33:void access$initMonthlyFocus(com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.List) -> access$initMonthlyFocus
+    33:33:void access$initNowDays(com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.List) -> access$initNowDays
+    33:33:void access$initNowadays(com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.List) -> access$initNowadays
+    33:33:void access$initYearFocus(com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.List) -> access$initYearFocus
+    34:34:com.dullfan.module_main.databinding.FragmentStatisticalDataBinding getBinding() -> getBinding
+    537:588:void initCumulativeFocus(java.util.List) -> initCumulativeFocus
+    50:59:void initData() -> initData
+    299:370:void initFocusTimeDistribution(java.util.List) -> initFocusTimeDistribution
+    396:578:void initFocusTimeDistributionFinish(java.util.HashMap) -> initFocusTimeDistributionFinish
+    380:388:void initHashMap(cn.leancloud.LCObject,cn.leancloud.LCObject,java.util.HashMap) -> initHashMap
+    116:121:void initMonthlyFocus(java.util.List) -> initMonthlyFocus
+    122:134:void initMonthlyFocus$lambda-4(java.text.SimpleDateFormat,com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.List,android.view.View) -> initMonthlyFocus$lambda-4
+    128:129:void initMonthlyFocus$lambda-4$lambda-3(com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.text.SimpleDateFormat,java.util.List,java.util.Date,android.view.View) -> initMonthlyFocus$lambda-4$lambda-3
+    227:291:void initMonthlyFocusLine(java.util.HashMap,java.util.Date) -> initMonthlyFocusLine
+    142:576:void initMonthlyFocusedTimeDateNewData(java.util.List,java.text.SimpleDateFormat) -> initMonthlyFocusedTimeDateNewData
+    453:580:void initNowDays(java.util.List) -> initNowDays
+    497:584:void initNowadays(java.util.List) -> initNowadays
+    73:77:void initYearFocus(java.util.List) -> initYearFocus
+    78:90:void initYearFocus$lambda-1(java.text.SimpleDateFormat,com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.List,android.view.View) -> initYearFocus$lambda-1
+    84:85:void initYearFocus$lambda-1$lambda-0(com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.text.SimpleDateFormat,java.util.List,java.util.Date,android.view.View) -> initYearFocus$lambda-1$lambda-0
+    163:222:void initYearFocusLine(java.util.HashMap,java.lang.String) -> initYearFocusLine
+    95:574:void initYearFocusedTimeDateNewData(java.util.List) -> initYearFocusedTimeDateNewData
+    42:43:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$binding$2 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$binding$2:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    34:34:java.lang.Object invoke() -> invoke
+    35:35:com.dullfan.module_main.databinding.FragmentStatisticalDataBinding invoke() -> invoke
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initCumulativeFocus$2 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initCumulativeFocus$2:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    542:542:java.lang.Object invoke(java.lang.Object,java.lang.Object) -> invoke
+    544:551:void invoke(int,int) -> invoke
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initCumulativeFocus$4 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initCumulativeFocus$4:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    559:559:java.lang.Object invoke(java.lang.Object,java.lang.Object) -> invoke
+    561:568:void invoke(int,int) -> invoke
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initData$1 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initData$1:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    59:59:java.lang.Object invoke(java.lang.Object) -> invoke
+    60:64:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initFocusTimeDistribution$1 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initFocusTimeDistribution$1:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    299:299:java.lang.Object invoke(java.lang.Object) -> invoke
+    300:575:void invoke(java.util.List) -> invoke
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initFocusTimeDistribution$1$2 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initFocusTimeDistribution$1$2:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    314:314:java.lang.Object invoke() -> invoke
+    315:334:void invoke() -> invoke
+    335:577:void invoke$lambda-3(java.text.SimpleDateFormat,kotlin.jvm.internal.Ref$LongRef,kotlin.jvm.internal.Ref$LongRef,com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.List,java.util.List,androidx.core.util.Pair) -> invoke$lambda-3
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initFocusTimeDistribution$2 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initFocusTimeDistribution$2:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    370:370:java.lang.Object invoke() -> invoke
+    371:371:void invoke() -> invoke
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initFocusTimeDistributionFinish$2 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initFocusTimeDistributionFinish$2:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    427:427:void <init>() -> <init>
+    429:429:java.lang.String getFormattedValue(float) -> getFormattedValue
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initMonthlyFocusLine$1 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initMonthlyFocusLine$1:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    255:255:void <init>() -> <init>
+    257:257:java.lang.String getFormattedValue(float) -> getFormattedValue
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initMonthlyFocusLine$2$1 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initMonthlyFocusLine$2$1:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    277:277:void <init>(java.lang.String) -> <init>
+    279:279:java.lang.String getFormattedValue(float) -> getFormattedValue
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initMonthlyFocusLine$2$2 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initMonthlyFocusLine$2$2:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    285:285:void <init>() -> <init>
+    287:287:java.lang.String getFormattedValue(float) -> getFormattedValue
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initNowDays$2 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initNowDays$2:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    462:462:java.lang.Object invoke() -> invoke
+    463:477:void invoke() -> invoke
+    478:574:void invoke$lambda-1(java.text.SimpleDateFormat,com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment,java.util.List,java.lang.Long) -> invoke$lambda-1
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initNowadays$2 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initNowadays$2:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    502:502:java.lang.Object invoke(java.lang.Object,java.lang.Object) -> invoke
+    504:511:void invoke(int,int) -> invoke
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initNowadays$4 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initNowadays$4:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    519:519:java.lang.Object invoke(java.lang.Object,java.lang.Object) -> invoke
+    521:528:void invoke(int,int) -> invoke
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initYearFocusLine$1 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initYearFocusLine$1:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    187:187:void <init>() -> <init>
+    189:189:java.lang.String getFormattedValue(float) -> getFormattedValue
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initYearFocusLine$2$1 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initYearFocusLine$2$1:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    208:208:void <init>() -> <init>
+    210:210:java.lang.String getFormattedValue(float) -> getFormattedValue
+com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initYearFocusLine$2$2 -> com.dullfan.module_main.ui.statistical_data.StatisticalDataFragment$initYearFocusLine$2$2:
+# {"id":"sourceFile","fileName":"StatisticalDataFragment.kt"}
+    216:216:void <init>() -> <init>
+    218:218:java.lang.String getFormattedValue(float) -> getFormattedValue
+com.dullfan.module_main.utils.MainUtilsKt -> com.dullfan.module_main.utils.MainUtilsKt:
+# {"id":"sourceFile","fileName":"MainUtils.kt"}
+    73:99:void showBottomAddProjectDialog(android.content.Context,java.util.List,kotlin.jvm.functions.Function1) -> showBottomAddProjectDialog
+    26:64:void showBottomSelectPictureDialog(android.content.Context,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0) -> showBottomSelectPictureDialog
+com.dullfan.module_main.utils.MainUtilsKt$showBottomAddProjectDialog$1$1 -> com.dullfan.module_main.utils.MainUtilsKt$showBottomAddProjectDialog$1$1:
+# {"id":"sourceFile","fileName":"MainUtils.kt"}
+    78:78:void <init>(java.util.List,kotlin.jvm.functions.Function1,com.google.android.material.bottomsheet.BottomSheetDialog,int) -> <init>
+    78:78:void onBind(androidx.databinding.ViewDataBinding,java.lang.Object,int) -> onBind
+    87:90:void onBind(androidx.databinding.ViewDataBinding,com.dullfan.module_main.bean.MainDrawerLayoutItemBean,int) -> onBind
+    91:92:void onBind$lambda-0(kotlin.jvm.functions.Function1,int,com.google.android.material.bottomsheet.BottomSheetDialog,android.view.View) -> onBind$lambda-0
+com.dullfan.module_main.utils.MainUtilsKt$showBottomSelectPictureDialog$1 -> com.dullfan.module_main.utils.MainUtilsKt$showBottomSelectPictureDialog$1:
+# {"id":"sourceFile","fileName":"MainUtils.kt"}
+    37:37:void <init>(java.util.ArrayList,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,com.google.android.material.bottomsheet.BottomSheetDialog,int) -> <init>
+    37:37:void onBind(androidx.databinding.ViewDataBinding,java.lang.Object,int) -> onBind
+    46:51:void onBind(androidx.databinding.ViewDataBinding,java.lang.String,int) -> onBind
+    54:60:void onBind$lambda-0(int,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0,com.google.android.material.bottomsheet.BottomSheetDialog,android.view.View) -> onBind$lambda-0
+com.dullfan.module_main.utils.ParameterPassingKt -> com.dullfan.module_main.utils.ParameterPassingKt:
+# {"id":"sourceFile","fileName":"ParameterPassing.kt"}
+    19:19:java.lang.String getCurrentaskId() -> getCurrentaskId
+    13:13:java.util.List getProjectDataList() -> getProjectDataList
+    8:8:cn.leancloud.LCObject getProjectDetailsData() -> getProjectDetailsData
+    29:29:int getStatisticalDataMode() -> getStatisticalDataMode
+    18:18:cn.leancloud.LCObject getTaskDetailsData() -> getTaskDetailsData
+    21:21:java.lang.String getTaskEndTime() -> getTaskEndTime
+    20:20:java.lang.String getTaskStartTime() -> getTaskStartTime
+    19:19:void setCurrentaskId(java.lang.String) -> setCurrentaskId
+    13:13:void setProjectDataList(java.util.List) -> setProjectDataList
+    8:8:void setProjectDetailsData(cn.leancloud.LCObject) -> setProjectDetailsData
+    29:29:void setStatisticalDataMode(int) -> setStatisticalDataMode
+    18:18:void setTaskDetailsData(cn.leancloud.LCObject) -> setTaskDetailsData
+    21:21:void setTaskEndTime(java.lang.String) -> setTaskEndTime
+    20:20:void setTaskStartTime(java.lang.String) -> setTaskStartTime
+com.dullfan.module_main.viewmodel.HomeViewModel -> com.dullfan.module_main.viewmodel.HomeViewModel:
+# {"id":"sourceFile","fileName":"HomeViewModel.kt"}
+    9:33:void <init>() -> <init>
+    36:36:void findInfoAvatar(java.lang.String) -> findInfoAvatar
+    40:41:void findInfoData() -> findInfoData
+    23:23:androidx.lifecycle.MutableLiveData getInfoAvatarObjectId() -> getInfoAvatarObjectId
+    18:18:androidx.lifecycle.MutableLiveData getInfoAvatarUri() -> getInfoAvatarUri
+    13:13:androidx.lifecycle.MutableLiveData getInfoData() -> getInfoData
+    28:28:androidx.lifecycle.MutableLiveData getProjectAvatar() -> getProjectAvatar
+    33:33:androidx.lifecycle.MutableLiveData getProjectObjectId() -> getProjectObjectId
+com.dullfan.module_main.viewmodel.InfoViewModel -> com.dullfan.module_main.viewmodel.InfoViewModel:
+# {"id":"sourceFile","fileName":"InfoViewModel.kt"}
+    17:23:void <init>() -> <init>
+    27:70:void editOnClick(androidx.fragment.app.FragmentActivity) -> editOnClick
+    23:23:androidx.lifecycle.MutableLiveData getEmailString() -> getEmailString
+    20:20:androidx.lifecycle.MutableLiveData getPhoneString() -> getPhoneString
+    21:21:androidx.lifecycle.MutableLiveData getPositionString() -> getPositionString
+    22:22:androidx.lifecycle.MutableLiveData getUserNameString() -> getUserNameString
+    19:19:androidx.lifecycle.MutableLiveData getWhetherToEditFlag() -> getWhetherToEditFlag
+    19:19:void setWhetherToEditFlag(androidx.lifecycle.MutableLiveData) -> setWhetherToEditFlag
+com.dullfan.module_main.viewmodel.InfoViewModel$editOnClick$1$1 -> com.dullfan.module_main.viewmodel.InfoViewModel$editOnClick$1$1:
+# {"id":"sourceFile","fileName":"InfoViewModel.kt"}
+    45:45:void <init>(androidx.fragment.app.FragmentActivity) -> <init>
+    55:59:void onError(java.lang.Throwable) -> onError
+    45:45:void onNext(java.lang.Object) -> onNext
+    51:51:void onNext(cn.leancloud.LCObject) -> onNext
+com.dullfan.module_main.viewmodel.MainViewModel -> com.dullfan.module_main.viewmodel.MainViewModel:
+# {"id":"sourceFile","fileName":"MainViewModel.kt"}
+    6:7:void <init>() -> <init>
+    7:7:androidx.lifecycle.MutableLiveData getExitFocusModeFlag() -> getExitFocusModeFlag
+    7:7:void setExitFocusModeFlag(androidx.lifecycle.MutableLiveData) -> setExitFocusModeFlag

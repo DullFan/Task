@@ -1,0 +1,58 @@
+# compiler: R8
+# compiler_version: 3.2.74
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.0"}
+# pg_map_id: cf68723
+# pg_map_hash: SHA-256 cf68723d8426d8f8766118b7665cbeb8a3240f06530f6551aa8caf7ce83e3020
+androidx.databinding.library.baseAdapters.BR -> androidx.databinding.library.baseAdapters.BR:
+    3:3:void <init>() -> <init>
+com.dullfan.module_photo.BR -> com.dullfan.module_photo.BR:
+    3:3:void <init>() -> <init>
+com.dullfan.module_photo.BuildConfig -> com.dullfan.module_photo.BuildConfig:
+    6:6:void <init>() -> <init>
+com.dullfan.module_photo.DataBinderMapperImpl -> com.dullfan.module_photo.DataBinderMapperImpl:
+    23:26:void <clinit>() -> <clinit>
+    20:20:void <init>() -> <init>
+    83:84:java.util.List collectDependencies() -> collectDependencies
+    77:77:java.lang.String convertBrIdToString(int) -> convertBrIdToString
+    31:42:androidx.databinding.ViewDataBinding getDataBinder(androidx.databinding.DataBindingComponent,android.view.View,int) -> getDataBinder
+    51:58:androidx.databinding.ViewDataBinding getDataBinder(androidx.databinding.DataBindingComponent,android.view.View[],int) -> getDataBinder
+    71:72:int getLayoutId(java.lang.String) -> getLayoutId
+com.dullfan.module_photo.DataBinderMapperImpl$InnerBrLookup -> com.dullfan.module_photo.DataBinderMapperImpl$InnerBrLookup:
+    89:92:void <clinit>() -> <clinit>
+    88:88:void <init>() -> <init>
+com.dullfan.module_photo.DataBinderMapperImpl$InnerLayoutIdLookup -> com.dullfan.module_photo.DataBinderMapperImpl$InnerLayoutIdLookup:
+    97:100:void <clinit>() -> <clinit>
+    96:96:void <init>() -> <init>
+com.dullfan.module_photo.DataBindingTriggerClass -> com.dullfan.module_photo.DataBindingTriggerClass:
+    4:4:void <init>() -> <init>
+com.dullfan.module_photo.common.PhotoServiceImpl -> com.dullfan.module_photo.common.PhotoServiceImpl:
+# {"id":"sourceFile","fileName":"PhotoServiceImpl.kt"}
+    10:10:void <init>() -> <init>
+    13:15:void startPhotoActivity(android.content.Context,java.lang.String) -> startPhotoActivity
+com.dullfan.module_photo.databinding.ActivityPhotoBinding -> com.dullfan.module_photo.databinding.ActivityPhotoBinding:
+    22:23:void <init>(java.lang.Object,android.view.View,int,com.luck.picture.lib.photoview.PhotoView) -> <init>
+    66:66:com.dullfan.module_photo.databinding.ActivityPhotoBinding bind(android.view.View) -> bind
+    78:78:com.dullfan.module_photo.databinding.ActivityPhotoBinding bind(android.view.View,java.lang.Object) -> bind
+    29:29:com.dullfan.module_photo.databinding.ActivityPhotoBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean) -> inflate
+    43:43:com.dullfan.module_photo.databinding.ActivityPhotoBinding inflate(android.view.LayoutInflater,android.view.ViewGroup,boolean,java.lang.Object) -> inflate
+    48:48:com.dullfan.module_photo.databinding.ActivityPhotoBinding inflate(android.view.LayoutInflater) -> inflate
+    62:62:com.dullfan.module_photo.databinding.ActivityPhotoBinding inflate(android.view.LayoutInflater,java.lang.Object) -> inflate
+com.dullfan.module_photo.databinding.ActivityPhotoBindingImpl -> com.dullfan.module_photo.databinding.ActivityPhotoBindingImpl:
+    16:17:void <clinit>() -> <clinit>
+    28:28:void <init>(androidx.databinding.DataBindingComponent,android.view.View) -> <init>
+    31:84:void <init>(androidx.databinding.DataBindingComponent,android.view.View,java.lang.Object[]) -> <init>
+    75:78:void executeBindings() -> executeBindings
+    51:55:boolean hasPendingBindings() -> hasPendingBindings
+    43:46:void invalidateAll() -> invalidateAll
+com.dullfan.module_photo.ui.PhotoActivity -> com.dullfan.module_photo.ui.PhotoActivity:
+# {"id":"sourceFile","fileName":"PhotoActivity.kt"}
+    11:13:void <init>() -> <init>
+    30:31:void finish() -> finish
+    13:13:com.dullfan.module_photo.databinding.ActivityPhotoBinding getViewDataBinding() -> getViewDataBinding
+    18:26:void onCreate(android.os.Bundle) -> onCreate
+    26:26:void onCreate$lambda-0(com.dullfan.module_photo.ui.PhotoActivity,android.view.View) -> onCreate$lambda-0
+com.dullfan.module_photo.ui.PhotoActivity$viewDataBinding$2 -> com.dullfan.module_photo.ui.PhotoActivity$viewDataBinding$2:
+# {"id":"sourceFile","fileName":"PhotoActivity.kt"}
+    13:13:java.lang.Object invoke() -> invoke
+    14:14:com.dullfan.module_photo.databinding.ActivityPhotoBinding invoke() -> invoke

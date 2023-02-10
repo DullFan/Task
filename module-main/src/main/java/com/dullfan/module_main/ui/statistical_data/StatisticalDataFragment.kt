@@ -40,7 +40,6 @@ class StatisticalDataFragment : BaseFragment() {
         savedInstanceState: Bundle?
     ): View {
         initData()
-
         return binding.root
     }
 

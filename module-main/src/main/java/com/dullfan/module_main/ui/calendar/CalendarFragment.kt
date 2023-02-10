@@ -143,7 +143,8 @@ class CalendarFragment : BaseFragment() {
                             } else {
                                 "${data.day}"
                             }
-                            binding.calendarDateDay.text = "${nowDay}日"
+                            showLog("${nowDay}号")
+                            binding.calendarDateDay.text = "${nowDay}号"
                             initIndexData("${data.year}-${nowMonth}-${nowDay}")
                         } else {
                             rvDataBinding.itemCalendarRvText.setTextColor(resources.getColor(com.dullfan.base.R.color.black))
