@@ -11,6 +11,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.databinding.ViewDataBinding
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.lifecycle.lifecycleScope
 import cn.leancloud.LCObject
 import cn.leancloud.LCQuery
 import com.dullfan.base.adapter.BaseRvAdapter
@@ -29,6 +30,7 @@ import com.dullfan.module_main.utils.projectDetailsData
 import com.dullfan.module_main.utils.taskEndTime
 import com.dullfan.module_main.utils.taskStartTime
 import com.google.gson.Gson
+import kotlinx.coroutines.*
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -57,38 +59,7 @@ class FocusedFragment() : BaseFragment() {
     var pauseSecond = 0
 
     //是否暂停
-    var pauseFlag = false;
-
-    val handler = object : Handler(Looper.myLooper()!!) {
-        @RequiresApi(Build.VERSION_CODES.N)
-        override fun handleMessage(msg: Message) {
-            if (pauseFlag) {
-                pauseDuration++
-                pauseSecond++
-                if (pauseSecond >= 60) {
-                    pauseMin++
-                    pauseSecond = 0
-                }
-                binding.circularProgressIndicator.setProgress(pauseSecond, true)
-                if (pauseSecond < 10) "0${pauseSecond}" else "$pauseSecond"
-                if (pauseMin < 10) "0${pauseMin}" else "$pauseMin"
-                binding.date.text =
-                    "${if (pauseMin < 10) "0${pauseMin}" else "$pauseMin"}:${if (pauseSecond < 10) "0${pauseSecond}" else "$pauseSecond"}"
-            } else {
-                second++
-                if (second >= 60) {
-                    min++
-                    second = 0
-                }
-                binding.circularProgressIndicator.setProgress(second, true)
-                if (second < 10) "0${second}" else "$second"
-                if (min < 10) "0${min}" else "$min"
-                binding.date.text =
-                    "${if (min < 10) "0${min}" else "$min"}:${if (second < 10) "0${second}" else "$second"}"
-            }
-            sendEmptyMessageDelayed(1, 1000)
-        }
-    }
+    var pauseFlag = false
 
     var alwaysOnFlag = false
     val sharedPreferences by lazy {
@@ -99,7 +70,7 @@ class FocusedFragment() : BaseFragment() {
     }
     var mp3List = ArrayList<Int>()
     var player = MediaPlayer()
-
+    var isExist = true
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreateView(
@@ -107,13 +78,50 @@ class FocusedFragment() : BaseFragment() {
     ): View {
         initSetting()
         initData()
-        handler.sendEmptyMessage(1)
+        lifecycleScope.launch(Dispatchers.IO) {
+            while (isExist){
+                delay(1000)
+                if (pauseFlag) {
+                    pauseDuration++
+                    pauseSecond++
+                    if (pauseSecond >= 60) {
+                        pauseMin++
+                        pauseSecond = 0
+                    }
+                    binding.circularProgressIndicator.setProgress(pauseSecond, true)
+                    if (pauseSecond < 10) "0${pauseSecond}" else "$pauseSecond"
+                    if (pauseMin < 10) "0${pauseMin}" else "$pauseMin"
+                    withContext(Dispatchers.Main) {
+                        binding.date.text =
+                            "${if (pauseMin < 10) "0${pauseMin}" else "$pauseMin"}:${if (pauseSecond < 10) "0${pauseSecond}" else "$pauseSecond"}"
+                    }
+                } else {
+                    second++
+                    if (second >= 60) {
+                        min++
+                        second = 0
+                    }
+                    binding.circularProgressIndicator.setProgress(second, true)
+                    if (second < 10) "0${second}" else "$second"
+                    if (min < 10) "0${min}" else "$min"
+                    withContext(Dispatchers.Main) {
+                        binding.date.text =
+                            "${if (min < 10) "0${min}" else "$min"}:${if (second < 10) "0${second}" else "$second"}"
+                    }
+                }
+            }
+        }
         initTermination()
         initAlwaysOn()
         initPause()
         initAdd()
         initMusic()
         return binding.root
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        isExist = false
     }
 
     /**
@@ -149,9 +157,7 @@ class FocusedFragment() : BaseFragment() {
                 object : BaseRvAdapter<String>(R.layout.item_dialog_music_layout, stringList) {
                     var selectedPosition = sharedPreferences.getInt("musicSelectedPosition", 0);
                     override fun onBind(
-                        rvDataBinding: ViewDataBinding,
-                        data: String,
-                        position: Int
+                        rvDataBinding: ViewDataBinding, data: String, position: Int
                     ) {
                         rvDataBinding as ItemDialogMusicLayoutBinding
                         rvDataBinding.image.setImageResource(imageList[position])
@@ -177,11 +183,11 @@ class FocusedFragment() : BaseFragment() {
                                     player.stop()
                                 }
                             } else {
-                                if(player.isPlaying){
+                                if (player.isPlaying) {
                                     player.stop()
                                 }
                                 //播放音乐
-                                player = MediaPlayer.create(requireContext(),mp3List[position])
+                                player = MediaPlayer.create(requireContext(), mp3List[position])
                                 player.isLooping = true
                                 player.start()
                             }
@@ -369,7 +375,9 @@ class FocusedFragment() : BaseFragment() {
         player.isLooping = true
 
         if (sharedPreferences.getInt("musicSelectedPosition", 0) != 0) {
-            player = MediaPlayer.create(requireContext(),mp3List[sharedPreferences.getInt("musicSelectedPosition", 0)])
+            player = MediaPlayer.create(
+                requireContext(), mp3List[sharedPreferences.getInt("musicSelectedPosition", 0)]
+            )
             player.isLooping = true
             player.start()
         }

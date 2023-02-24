@@ -52,7 +52,7 @@ class AddTaskFragment() : BaseFragment() {
             collapseTheSoftKeyboard()
             val name = binding.addProjectName.text.toString()
             val detail = binding.addProjectDetail.text.toString()
-            if (name.isBlank() || detail.isBlank()) {
+            if (name.isBlank()) {
                 showToast("请输入内容")
                 return@setOnClickListener
             }

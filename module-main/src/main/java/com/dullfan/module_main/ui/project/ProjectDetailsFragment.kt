@@ -77,6 +77,7 @@ class ProjectDetailsFragment : BaseFragment() {
                 showToast("用户拒绝了权限")
             }
         }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

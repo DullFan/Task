@@ -74,6 +74,7 @@ class CalendarFragment : BaseFragment() {
             leftSwipeNumber++
             mutableListOf.add(0, calendar)
         }
+
         mutableListOf += Calendar.getInstance()
         mutableListOf += Calendar.getInstance().apply {
             add(Calendar.MONTH, +rightSwipeNumber)
@@ -143,7 +144,6 @@ class CalendarFragment : BaseFragment() {
                             } else {
                                 "${data.day}"
                             }
-                            showLog("${nowDay}号")
                             binding.calendarDateDay.text = "${nowDay}号"
                             initIndexData("${data.year}-${nowMonth}-${nowDay}")
                         } else {

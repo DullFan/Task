@@ -27,7 +27,7 @@ class AddProjectTaskFragment : BaseFragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        ProjectDetailsFragment.allTaskFragmentIsShow = true
         binding.addProjectTaskBack.setOnClickListener {
             requireActivity().supportFragmentManager.popBackStack()
         }
@@ -51,7 +51,7 @@ class AddProjectTaskFragment : BaseFragment() {
             collapseTheSoftKeyboard()
             val name = binding.addProjectTaskName.text.toString()
             val detail = binding.addProjectTaskDetail.text.toString()
-            if (name.isBlank() || detail.isBlank()) {
+            if (name.isBlank()) {
                 showToast("请输入内容")
                 return@setOnClickListener
             }

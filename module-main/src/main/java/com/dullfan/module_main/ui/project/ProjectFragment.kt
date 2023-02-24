@@ -1,5 +1,7 @@
 package com.dullfan.module_main.ui.project
 
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -79,6 +81,7 @@ class ProjectFragment : BaseFragment() {
     }
 
     val rvAdapter = object : BaseRvAdapter<LCObject>(R.layout.item_project_rv_layout, ArrayList()) {
+        @RequiresApi(Build.VERSION_CODES.M)
         override fun onBind(
             rvDataBinding: ViewDataBinding,
             data: LCObject,
@@ -108,6 +111,42 @@ class ProjectFragment : BaseFragment() {
                 projectDetailsData = data
                 (activity as MainActivity).startDetailsFragment()
             }
+
+            rvDataBinding.root.setOnLongClickListener {
+                AlertDialog.Builder(requireContext())
+                    .setTitle("提示")
+                    .setMessage("要删除该项目吗")
+                    .setNegativeButton("取消",null)
+                    .setPositiveButton("确定"
+                    ) { dialog, which ->
+                        LCObject.createWithoutData("Projects",data.objectId).deleteInBackground()
+                            .subscribe(myObserver {  })
+                        this.notifyItemRemoved(position)
+                        LCQuery<LCObject>("Tasks")
+                            .whereEqualTo("project_id",data.objectId)
+                            .findInBackground()
+                            .subscribe(myObserver {
+                                it.forEach {
+                                    LCObject.createWithoutData("Tasks",it.objectId).deleteInBackground()
+                                        .subscribe(myObserver {})
+                                }
+                            })
+                        LCQuery<LCObject>("FocusMode")
+                            .whereEqualTo("project_id",data.objectId)
+                            .findInBackground()
+                            .subscribe(myObserver {
+                                it.forEach {
+                                    LCObject.createWithoutData("FocusMode",it.objectId).deleteInBackground()
+                                        .subscribe(myObserver {  })
+                                }
+                            })
+                        initRv()
+                    }
+                    .show()
+                return@setOnLongClickListener true
+            }
+
+
         }
     }
 
