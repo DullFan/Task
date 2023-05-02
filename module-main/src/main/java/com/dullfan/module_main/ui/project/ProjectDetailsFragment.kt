@@ -92,8 +92,19 @@ class ProjectDetailsFragment : BaseFragment() {
         })
         getLCFileImageUrl(projectDetailsData["project_avatar"].toString(), viewModel.projectAvatar)
         emergencyLevelObjectId = projectDetailsData["project_priority_level"].toString()
-
         initDrawer()
+        // --------------------------->
+        //默认跳转
+        viewDataBinding.projectDetailsFramelayout.visibility = View.VISIBLE
+        viewDataBinding.projectDetailsIntroduceLayout.visibility = View.GONE
+        startFragment(
+            viewDataBinding.projectDetailsFramelayout.id,
+            TaskFragment(viewDataBinding)
+        )
+        baseRvAdapter.index = 1
+        // -------------------------------------->
+
+
         initIntroduce()
         initEditIntroduce()
         initAvatar()

@@ -164,6 +164,7 @@ class ProjectFragment : BaseFragment() {
             myObserver(onError = { e -> e.printStackTrace() },
                 onNext = { t ->
                     if (t.size != 0) {
+                        t.reverse()
                         viewDataBinding.projectRv.visibility = View.VISIBLE
                         viewDataBinding.projectLottie.visibility = View.GONE
                         rvAdapter.dataList = t

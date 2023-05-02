@@ -25,6 +25,9 @@ import com.dullfan.module_main.utils.StatisticalDataMode
 import com.dullfan.module_main.utils.currentaskId
 import com.dullfan.module_main.utils.projectDetailsData
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 
 class TaskFragment() : BaseFragment() {
@@ -112,7 +115,7 @@ class TaskFragment() : BaseFragment() {
                     val title = dialogTaskDetailsLayoutBinding.title.text.toString()
                     val content = dialogTaskDetailsLayoutBinding.content.text.toString()
 
-                    if (title.isBlank() || content.isBlank()) {
+                    if (title.isBlank()) {
                         showToast("请输入内容")
                         return@setOnClickListener
                     }
@@ -229,6 +232,7 @@ class TaskFragment() : BaseFragment() {
                 viewDataBinding.rv.visibility = View.GONE
                 viewDataBinding.lottieNullData.visibility = View.VISIBLE
             } else {
+                it.reverse()
                 baseAdapter.dataList = it
                 viewDataBinding.rv.visibility = View.VISIBLE
                 viewDataBinding.lottieNullData.visibility = View.GONE
