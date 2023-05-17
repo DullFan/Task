@@ -1,6 +1,7 @@
 package com.dullfan.module_main.ui.project
 
 import android.Manifest
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -43,6 +44,39 @@ class AddProjectFragment : BaseFragment() {
      */
     private val registerForActivityResult =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+                if (it[Manifest.permission.READ_MEDIA_IMAGES]!! && it[Manifest.permission.CAMERA]!!
+                    && it[Manifest.permission.WRITE_EXTERNAL_STORAGE]!!
+                ) {
+                    showPictureSelector(requireContext(), onResult = { result ->
+                        dialogLogging.show()
+                        saveImage(
+                            requireContext(),
+                            result[0].realPath,
+                            viewModel.infoAvatarUri,
+                            viewModel.infoAvatarObjectId
+                        )
+                    })
+                } else {
+                    showToast("用户拒绝了权限")
+                }
+            }else{
+                if (it[Manifest.permission.READ_EXTERNAL_STORAGE]!! && it[Manifest.permission.CAMERA]!!
+                    && it[Manifest.permission.WRITE_EXTERNAL_STORAGE]!!
+                ) {
+                    showPictureSelector(requireContext(), onResult = { result ->
+                        dialogLogging.show()
+                        saveImage(
+                            requireContext(),
+                            result[0].realPath,
+                            viewModel.infoAvatarUri,
+                            viewModel.infoAvatarObjectId
+                        )
+                    })
+                } else {
+                    showToast("用户拒绝了权限")
+                }
+            }
             if (it[Manifest.permission.READ_EXTERNAL_STORAGE]!! && it[Manifest.permission.CAMERA]!!
                 && it[Manifest.permission.WRITE_EXTERNAL_STORAGE]!!
             ) {

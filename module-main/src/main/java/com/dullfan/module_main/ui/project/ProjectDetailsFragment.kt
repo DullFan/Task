@@ -3,6 +3,7 @@ package com.dullfan.module_main.ui.project
 import android.Manifest
 import android.app.AlertDialog
 import android.graphics.Color
+import android.os.Build
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -58,24 +59,47 @@ class ProjectDetailsFragment : BaseFragment() {
      */
     val registerForActivityResult =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
-            if (it[Manifest.permission.READ_EXTERNAL_STORAGE]!! && it[Manifest.permission.CAMERA]!!
-                && it[Manifest.permission.WRITE_EXTERNAL_STORAGE]!!
-            ) {
-                showPictureSelector(requireContext(), onResult = { result ->
-                    if (result != null) {
-                        dialogLogging.show()
-                        //保存图片
-                        saveImage(
-                            requireContext(),
-                            result[0].realPath,
-                            viewModel.projectAvatar,
-                            viewModel.projectObjectId
-                        )
-                    }
-                })
-            } else {
-                showToast("用户拒绝了权限")
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+                if (it[Manifest.permission.READ_MEDIA_IMAGES]!! && it[Manifest.permission.CAMERA]!!
+                    && it[Manifest.permission.WRITE_EXTERNAL_STORAGE]!!
+                ) {
+                    showPictureSelector(requireContext(), onResult = { result ->
+                        if (result != null) {
+                            dialogLogging.show()
+                            //保存图片
+                            saveImage(
+                                requireContext(),
+                                result[0].realPath,
+                                viewModel.projectAvatar,
+                                viewModel.projectObjectId
+                            )
+                        }
+                    })
+                } else {
+                    showToast("用户拒绝了权限")
+                }
+            }else{
+                if (it[Manifest.permission.READ_EXTERNAL_STORAGE]!! && it[Manifest.permission.CAMERA]!!
+                    && it[Manifest.permission.WRITE_EXTERNAL_STORAGE]!!
+                ) {
+                    showPictureSelector(requireContext(), onResult = { result ->
+                        if (result != null) {
+                            dialogLogging.show()
+                            //保存图片
+                            saveImage(
+                                requireContext(),
+                                result[0].realPath,
+                                viewModel.projectAvatar,
+                                viewModel.projectObjectId
+                            )
+                        }
+                    })
+                } else {
+                    showToast("用户拒绝了权限")
+                }
             }
+
+
         }
 
     override fun onCreateView(

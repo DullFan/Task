@@ -1,6 +1,7 @@
 package com.dullfan.base.utils
 
 import android.Manifest
+import android.os.Build
 
 /**
  *  默认头像Id
@@ -23,8 +24,16 @@ const val PROJECT_GRADE_MIDDLE = "63034a6fc4ae9e05acb36c44"
 const val PROJECT_GRADE_HIGH = "63034a67c4ae9e05acb36c36"
 
 val permissionsReadAndWrite: Array<String> =
-    arrayOf(
-        Manifest.permission.WRITE_EXTERNAL_STORAGE,
-        Manifest.permission.CAMERA,
-        Manifest.permission.READ_EXTERNAL_STORAGE
-    )
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        arrayOf(
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.READ_MEDIA_IMAGES,
+            Manifest.permission.CAMERA
+        )
+    } else {
+        arrayOf(
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.CAMERA,
+            Manifest.permission.READ_EXTERNAL_STORAGE
+        )
+    }

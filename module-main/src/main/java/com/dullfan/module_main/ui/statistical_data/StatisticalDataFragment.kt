@@ -63,7 +63,6 @@ class StatisticalDataFragment : BaseFragment() {
             initMonthlyFocus(it)
             initYearFocus(it)
         })
-
     }
 
     /**
