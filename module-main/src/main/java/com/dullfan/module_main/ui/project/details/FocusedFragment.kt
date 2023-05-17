@@ -283,8 +283,11 @@ class FocusedFragment() : BaseFragment() {
      * 终止事件
      */
     private fun initTermination() {
+        // 停止事件
         binding.finish.setOnClickListener(myClickListener {
-            if (System.currentTimeMillis() - inTime > 1000) {
+            // 判断专注模式是否开启1分钟
+            if (System.currentTimeMillis() - inTime > 60000) {
+                // 创建对话框，让用户填写心得
                 val dialogFinishLayoutBinding = DialogFinishLayoutBinding.inflate(layoutInflater)
                 val dialog = AlertDialog.Builder(requireContext()).create()
                 dialog.setView(dialogFinishLayoutBinding.root)
@@ -296,6 +299,7 @@ class FocusedFragment() : BaseFragment() {
                 })
 
                 dialogFinishLayoutBinding.button.setOnClickListener(myClickListener {
+                    // 提交当前专注记录
                     taskEndTime = getNowDate()
                     val etString = dialogFinishLayoutBinding.dialogFocusedEt.text.toString()
                     val timeDifference = timeDifference(taskStartTime, taskEndTime)

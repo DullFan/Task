@@ -38,10 +38,12 @@ class LoginActivity : BaseActivity() {
         findNavController.navigateUp()
     }
 
+    // 跳转忘记密码
     fun startForgotPasswordFragment() {
         findNavController.navigate(R.id.action_loginFragment_to_forgotPasswordFragment)
     }
 
+    // 跳转注册
     fun startSignUpFragment() {
         findNavController.navigate(R.id.action_loginFragment_to_signUpFragment)
     }

@@ -105,7 +105,6 @@ class CalendarFragment : BaseFragment() {
                         position: Int
                     ) {
                         rvDataBinding as ItemCalendarRvTextBinding
-
                         rvDataBinding.itemCalendarRvText.visibility =
                             if (data.day != 0) View.VISIBLE else View.GONE
                         rvDataBinding.itemCalendarRvText.text = "${data.day}"
@@ -121,12 +120,14 @@ class CalendarFragment : BaseFragment() {
                             } else {
                                 "${data.day}"
                             }
+                            // 判断当天是否有专注模式记录，如果有就添加边框显示
                             if (it.getString("FocusModeOnTime")
                                     .contains("${data.year}-${nowMonth}-${nowDay}")
                             ) {
                                 rvDataBinding.itemCalendarRvCard.strokeWidth = 5
                             }
                         }
+                        // 判断是否是当前选中的，如果是就显示当日的专注信息
                         if (index == position) {
                             rvDataBinding.itemCalendarRvText.setTextColor(resources.getColor(com.dullfan.base.R.color.white))
                             rvDataBinding.itemCalendarRvText.setBackgroundColor(
@@ -155,7 +156,7 @@ class CalendarFragment : BaseFragment() {
                             )
                         }
                         rvDataBinding.root.setOnClickListener(myClickListener {
-                            if(data.day != 0){
+                            if (data.day != 0) {
                                 index = position
                             }
                         })
@@ -401,8 +402,10 @@ class CalendarFragment : BaseFragment() {
                     } else {
                         "${data.day}"
                     }
+
+                    // TODO 日期判断存在问题
                     if (timeString.contains("${data.year}-${nowMonth}-${nowDay}")) {
-                        rvAdapter.index = index + 1
+                        rvAdapter.index = index
                     } else if (data.day == 1) {
                         rvAdapter.index = index
                     }
@@ -433,8 +436,6 @@ class CalendarFragment : BaseFragment() {
 
         binding.calendarVp2.adapter = vp2Adapter
         binding.calendarVp2.setCurrentItem(mutableListOf.size - 2, false)
-
-
     }
 
     /**

@@ -13,6 +13,7 @@
         android:background="@drawable/login_back"
         tools:context=".ui.fragment.LoginFragment">
 
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/login_guideline"
             android:layout_width="wrap_content"
